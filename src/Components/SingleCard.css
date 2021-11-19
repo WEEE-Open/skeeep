@@ -1,0 +1,29 @@
+.singleCard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    margin:10px 0px;
+    padding: 20px 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.singleCard .title{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.singleCard .subtitle{
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.singleCard .icon{
+    font-size: 88px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.singleCard .text{
+    font-size: 16px;
+    font-weight: 400;
+}
