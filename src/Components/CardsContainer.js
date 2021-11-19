@@ -1,10 +1,10 @@
-import Card from "./Card";
+import SingleCard from "./SingleCard";
 
 function CardsContainer() {
     return ( 
         <>
             <h2>The Cards Container</h2>
-            <Card/>
+            <SingleCard/>
         </>
      );
 }
