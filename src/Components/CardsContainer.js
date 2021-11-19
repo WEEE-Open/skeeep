@@ -1,8 +1,5 @@
 import SingleCard from "./SingleCard";
-import CardGroup from "react-bootstrap/CardGroup";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import {CardGroup, Container, Row, Col} from "react-bootstrap";
 import "./CardsContainer.css";
 
 function CardsContainer() {
