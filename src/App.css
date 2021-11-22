@@ -37,3 +37,42 @@
     transform: rotate(360deg);
   }
 }
+
+/*--------- CSS animated Background ----------*/
+
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(120deg,  #00983a 10%, #48aa51, #6fbb68, #91cd82, #b0df9c, #b0df9c, #b0df9c, #b0df9c, #91cd82, #6fbb68, #48aa51, #00983a);
+  background-size: 200% 200%;
+  -webkit-animation: Gradient 20s ease-in-out infinite;
+  -moz-animation: Gradient 20s ease-in-out infinite;
+  animation: Gradient 20s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+
+/*--------- CSS animated Background ----------*/
+
+
+/*background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);*/
