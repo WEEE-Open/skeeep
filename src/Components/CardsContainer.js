@@ -25,8 +25,8 @@ function CardsContainer() {
       tincidunt ut laoreet dolore`,
     },
     {
-      name: "politogruppi",
-      title: "Politogruppi",
+      name: "politogruppibot",
+      title: "PoliToGruppiBot",
       subTitle: "Frase riassuntiva d’effeto",
       content: `Lorem ipsum dolor sit amet,
       consectetuer adipiscing elit, sed
