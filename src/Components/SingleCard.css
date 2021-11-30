@@ -1,36 +1,36 @@
-.singleCard{
+.card{
     box-shadow: 0 7px 5px 0px rgba(0, 0, 0, 0.2), 10px 6px 10px 0px rgba(0, 0, 0, 0.19);
     border-radius: 25px;
     margin:10px 0px;
     padding: 25px 5px;
 }
 
-.singleCard .title{
+.card .title{
     font-size: 20pt;
     font-weight: 900;
     font-family: 'Nunito', sans-serif;
     color: #3C3D3B ;
 }
 
-.singleCard .subtitle{
+.card .subtitle{
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color:  #797979 ;
 }
 
-.singleCard .icon{
+.card .icon{
     margin : 0 auto;
     padding: 0px;
     width: 215px;
     height: 215px;
 }
-.singleCard .icon img{
+.card .icon img{
     margin: 0px auto;
     padding: 0px;
 }
 
-.singleCard .text{
+.card .text{
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     margin-top: 10px;

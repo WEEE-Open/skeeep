@@ -5,7 +5,7 @@ function SingleCard(props) {
   const imageSrc = `/icons/${props.name}.svg`;
   return (
     <>
-      <Card className="singleCard">
+      <Card className="card">
         <Card.Body>
           <Card.Title className="title">{props.title}</Card.Title>
           <div className="icon">
