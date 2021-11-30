@@ -35,7 +35,7 @@ function CardsContainer() {
     },
     {
       name: "sonousciteledate",
-      title: "Sonousciteledate",
+      title: "sonousciteledate.it",
       subTitle: "Frase riassuntiva d’effeto",
       content: `Lorem ipsum dolor sit amet,
       consectetuer adipiscing elit, sed
