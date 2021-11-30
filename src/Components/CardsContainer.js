@@ -7,8 +7,8 @@ import "./CardsContainer.css";
 function CardsContainer() {
   const [cards, setCards] = useState([
     {
-      name: "inginf_bot",
-      title: "Inginf Bot",
+      name: "inginfbot",
+      title: "inginf_bot",
       subTitle: "Frase riassuntiva d’effeto",
       content: `Lorem ipsum dolor sit amet,
       consectetuer adipiscing elit, sed
@@ -16,8 +16,8 @@ function CardsContainer() {
       tincidunt ut laoreet dolore`,
     },
     {
-      name: "poli_tools",
-      title: "Poli Tools",
+      name: "politools",
+      title: "PoliTools",
       subTitle: "Frase riassuntiva d’effeto",
       content: `Lorem ipsum dolor sit amet,
       consectetuer adipiscing elit, sed
@@ -25,8 +25,8 @@ function CardsContainer() {
       tincidunt ut laoreet dolore`,
     },
     {
-      name: "politogruppi",
-      title: "Politogruppi",
+      name: "politogruppibot",
+      title: "PoliToGruppiBot",
       subTitle: "Frase riassuntiva d’effeto",
       content: `Lorem ipsum dolor sit amet,
       consectetuer adipiscing elit, sed
@@ -35,7 +35,7 @@ function CardsContainer() {
     },
     {
       name: "sonousciteledate",
-      title: "Sonousciteledate",
+      title: "sonousciteledate.it",
       subTitle: "Frase riassuntiva d’effeto",
       content: `Lorem ipsum dolor sit amet,
       consectetuer adipiscing elit, sed
