@@ -38,13 +38,14 @@
     color:   #3C3D3B ;
 }
 
-.dark .card .title{
+
+.bootstrap-dark .card .title{
 color:#f5f6fa
 }
 
-.dark .card .subtitle{
+.bootstrap-dark .card .subtitle{
     color:#dcdde1
 }
-.dark .card .text{
+.bootstrap-dark .card .text{
     color:#dcdde1
 }

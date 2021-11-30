@@ -1,6 +1,6 @@
 .cardsContainer{
     margin:0 auto;
 }
-.dark .card{
-    background-color: #3c3d3b;
+.bootstrap-dark .card{
+    background-color: #222f3e;
 }

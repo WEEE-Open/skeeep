@@ -54,7 +54,7 @@ body {
   animation: Gradient 20s ease-in-out infinite;
 }
 
-.dark {
+.bootstrap-dark {
   height: 100vh;
   margin: 0;
   padding: 0;
