@@ -23,7 +23,7 @@ function App() {
         }
         getLang();
     }, []);
-    // applang <-
+    // appLang <-
 
 
 

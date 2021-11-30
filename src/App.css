@@ -40,11 +40,9 @@
 
 
 
-/*--------- CSS Animated Background ----------*/
-
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 
@@ -57,6 +55,7 @@ body {
 
 
 @-webkit-keyframes Gradient {
+
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
@@ -75,7 +74,7 @@ body {
 /* !!!! background: linear-gradient(120deg, #7dc1f9, #b1aef9, #ff82a0, #FBAD5F) !!!!*/
 /* original: linear-gradient( #7dc1f9, #b1aef9, #e795d9, #ff82a0, #fb845f)*/
 
-/*--------- CSS Animated Background ----------*/
+
 
 
 
