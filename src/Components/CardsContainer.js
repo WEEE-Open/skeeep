@@ -43,7 +43,7 @@ function CardsContainer() {
       tincidunt ut laoreet dolore`,
     },
     {
-      name: "study_planner",
+      name: "studyplanner",
       title: "Study Planner",
       subTitle: "Frase riassuntiva d’effeto",
       content: `Lorem ipsum dolor sit amet,
