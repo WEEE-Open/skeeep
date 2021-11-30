@@ -16,8 +16,8 @@ function CardsContainer() {
       tincidunt ut laoreet dolore`,
     },
     {
-      name: "poli_tools",
-      title: "Poli Tools",
+      name: "politools",
+      title: "PoliTools",
       subTitle: "Frase riassuntiva d’effeto",
       content: `Lorem ipsum dolor sit amet,
       consectetuer adipiscing elit, sed
