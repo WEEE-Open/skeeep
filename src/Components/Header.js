@@ -1,8 +1,10 @@
 import Button from "react-bootstrap/Button";
-function Header() {
+
+
+function Header(props) {
   return (
     <>
-      <h1>This is the header</h1>
+      <img id ='skeeep-logo' alt={'skeeep-logo'} src={'Skeeep.svg'}/>
     </>
   );
 }

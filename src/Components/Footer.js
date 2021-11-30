@@ -1,7 +1,9 @@
-function Footer() {
+import translations from "./Translations";
+
+function Footer(props) {
     return ( 
         <>
-            <h3>This is the footer</h3>
+            <h3>{translations[props.lang].footer}</h3>
         </>
      );
 }
