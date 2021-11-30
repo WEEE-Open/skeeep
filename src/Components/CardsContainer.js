@@ -2,21 +2,21 @@ import SingleCard from "./SingleCard";
 import {CardGroup, Container, Row, Col} from "react-bootstrap";
 import "./CardsContainer.css";
 
-function CardsContainer() {
+function CardsContainer(props) {
   return (
     <Container className="cardsContainer">
       <Row>
         <Col>
-          <SingleCard />
+          <SingleCard cardLang = {props.lang}/>
         </Col>
         <Col>
-          <SingleCard />
+          <SingleCard cardLang = {props.lang}/>
         </Col>
         <Col>
-          <SingleCard />
+          <SingleCard cardLang = {props.lang}/>
         </Col>
         <Col>
-          <SingleCard />
+          <SingleCard cardLang = {props.lang}/>
         </Col>
       </Row>
     </Container>
