@@ -56,13 +56,13 @@ function CardsContainer() {
   return (
     <Container className="cardsContainer">
       <Row>
-        {cards.map((c) => {
+        {cards.map((c, index) => {
           return (
-            <>
-              <Col lg={3} md={6} sm={6} xs={12}>
-                <SingleCard name={c.name} title={c.title} subTitle={c.subTitle} content={c.content} />
+           
+              <Col  lg={3} md={6} sm={6} xs={12} key={index}>
+                <SingleCard name={c.name} title={c.title} subTitle={c.subTitle} content={c.content}  />
               </Col>
-            </>
+            
           );
         })}
       </Row>
