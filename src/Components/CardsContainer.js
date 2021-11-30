@@ -7,8 +7,8 @@ import "./CardsContainer.css";
 function CardsContainer() {
   const [cards, setCards] = useState([
     {
-      name: "inginf_bot",
-      title: "Inginf Bot",
+      name: "inginfbot",
+      title: "inginf_bot",
       subTitle: "Frase riassuntiva d’effeto",
       content: `Lorem ipsum dolor sit amet,
       consectetuer adipiscing elit, sed
