@@ -15,7 +15,7 @@ function App() {
     useEffect(() => {
         const getLang = () => {
             try {
-                const navLang = window.navigator.language? window.navigator.language:window.navigator.languages[0];
+                const navLang = window.navigator.language? window.navigator.language:'en-US';
                 setLang(navLang);
             } catch (err) {
                 console.error(err.error);
