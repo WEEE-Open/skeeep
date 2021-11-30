@@ -8,11 +8,12 @@ function SingleCard(props) {
       <Card className="singleCard">
         <Card.Body>
           <Card.Title className="title">{props.title}</Card.Title>
-          <img src={imageSrc} alt="icon" />
+          <div className="icon">
+            <img src={imageSrc} alt={props.name}></img>
+          </div>
+
           <Card.Title className="subtitle">{props.subTitle}</Card.Title>
-          <Card.Text className="text">
-            {props.content}
-          </Card.Text>
+          <Card.Text className="text">{props.content}</Card.Text>
         </Card.Body>
       </Card>
     </>

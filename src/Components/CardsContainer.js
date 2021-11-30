@@ -59,7 +59,7 @@ function CardsContainer() {
         {cards.map((c) => {
           return (
             <>
-              <Col>
+              <Col lg={3} md={6} sm={6} xs={12}>
                 <SingleCard name={c.name} title={c.title} subTitle={c.subTitle} content={c.content} />
               </Col>
             </>

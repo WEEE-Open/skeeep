@@ -2,8 +2,7 @@
     box-shadow: 0 7px 5px 0px rgba(0, 0, 0, 0.2), 10px 6px 10px 0px rgba(0, 0, 0, 0.19);
     border-radius: 25px;
     margin:10px 0px;
-    padding: 20px 15px;
-    width: 18rem;
+    padding: 25px 5px;
 }
 
 .singleCard .title{
@@ -21,9 +20,14 @@
 }
 
 .singleCard .icon{
-    font-size: 135px;
-    margin-top: 25px;
-    margin-bottom: 48px;
+    margin : 0 auto;
+    padding: 0px;
+    width: 215px;
+    height: 215px;
+}
+.singleCard .icon img{
+    margin: 0px auto;
+    padding: 0px;
 }
 
 .singleCard .text{
