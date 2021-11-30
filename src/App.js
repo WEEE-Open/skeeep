@@ -9,14 +9,17 @@ import Header from './Components/Header';
 
 
 function App() {
+
     // set language
     const [appLang,setLang] = useState('en-US');
+
     // load lang
     useEffect(() => {
         const getLang = () => {
             try {
                 const navLang = window.navigator.language? window.navigator.language:'en-US';
                 setLang(navLang);
+				console.info(`Set language to ${navLang}`);
             } catch (err) {
                 console.error(err.error);
             }
@@ -28,11 +31,11 @@ function App() {
 
 
     return (
-    <div className="App">
-      <Header lang = { appLang }/>
-      <CardsContainer lang = { appLang }/>
-      <Footer lang = { appLang }/>
-    </div>
+    	<div className="App">
+      		<Header lang = { appLang }/>
+      		<CardsContainer lang = { appLang }/>
+      		<Footer lang = { appLang }/>
+    	</div>
   );
 }
 
