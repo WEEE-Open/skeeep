@@ -37,3 +37,4 @@ jobs:
           prettier: false
           auto_fix: true
           github_token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
+          git_email: "95386651+weee-open-bot@users.noreply.github.com"
