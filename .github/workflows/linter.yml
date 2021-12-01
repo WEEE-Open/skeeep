@@ -20,6 +20,14 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Set up git
+        run: |
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git config user.name "$GITHUB_ACTOR"
+          echo "GitHub actor is $GITHUB_ACTOR"
 
       - name: Set up Node.js
         uses: actions/setup-node@v1
@@ -37,4 +45,3 @@ jobs:
           prettier: false
           auto_fix: true
           github_token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
-          git_email: "95386651+weee-open-bot@users.noreply.github.com"
