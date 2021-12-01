@@ -24,12 +24,6 @@ jobs:
           persist-credentials: false
           token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
 
-      - name: Set up git
-        run: |
-          git config user.email "weee-open-bot@users.noreply.github.com"
-          git config user.name "weee-open-bot"
-          echo "GitHub actor is $GITHUB_ACTOR"
-
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
