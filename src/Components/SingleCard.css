@@ -1,29 +1,51 @@
-.singleCard{
+.card{
     box-shadow: 0 7px 5px 0px rgba(0, 0, 0, 0.2), 10px 6px 10px 0px rgba(0, 0, 0, 0.19);
     border-radius: 25px;
     margin:10px 0px;
-    padding: 20px 5px;
-    font-family: 'Open Sans', sans-serif;
+    padding: 25px 5px;
 }
 
-.singleCard .title{
-    font-size: 28px;
+.card .title{
+    font-size: 20pt;
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+    color: #3C3D3B ;
+}
+
+.card .subtitle{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
     font-weight: 700;
+    color:  #797979 ;
 }
 
-.singleCard .subtitle{
-
-    font-size: 20px;
-    font-weight: 500;
+.card .icon{
+    margin : 0 auto;
+    padding: 0px;
+    width: 215px;
+    height: 215px;
+}
+.card .icon img{
+    margin: 0px auto;
+    padding: 0px;
 }
 
-.singleCard .icon{
-    font-size: 88px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.singleCard .text{
-    font-size: 16px;
+.card .text{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
     font-weight: 400;
+    color:   #3C3D3B ;
+}
+
+
+.bootstrap-dark .card .title{
+color:#f5f6fa
+}
+
+.bootstrap-dark .card .subtitle{
+    color:#dcdde1
+}
+.bootstrap-dark .card .text{
+    color:#dcdde1
 }
