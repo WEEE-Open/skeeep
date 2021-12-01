@@ -18,20 +18,10 @@ body {
 }
 
 .bootstrap-dark {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-
-  background: linear-gradient(120deg,#16a527 0%, #294e37 74%);
-  background-size: 200% 200%;
-  -webkit-animation: Gradient 20s ease-in-out infinite;
-  -moz-animation: Gradient 20s ease-in-out infinite;
-  animation: Gradient 20s ease-in-out infinite;
 }
 
 
 @-webkit-keyframes Gradient {
-
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
