@@ -3,7 +3,7 @@ import SingleCard from "./SingleCard";
 import { CardGroup, Container, Row, Col } from "react-bootstrap";
 import "./CardsContainer.css";
 
-function CardsContainer() {
+function CardsContainer(props) {
   const [cards, setCards] = useState([
     {
       name: "inginfbot",
@@ -57,16 +57,14 @@ function CardsContainer() {
       <Row>
         {cards.map((c, index) => {
           return (
-           
               <Col  lg={3} md={6} sm={6} xs={12} key={index}>
                 <SingleCard 
                     name={c.name} 
                     title={c.title} 
                     subTitle={c.subTitle}
-                    cardLang={c.lang} 
+                    lang={props.lang}
                  />
               </Col>
-            
           );
         })}
       </Row>

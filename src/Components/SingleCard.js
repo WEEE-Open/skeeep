@@ -13,13 +13,13 @@ function SingleCard(props) {
         <Card.Body>
           <Card.Title className="title">{props.title}</Card.Title>
           <div className="icon">
-            <img src={imageSrc} alt={props.name}></img>
+            <img src={imageSrc} alt={props.name}/>
           </div>
           <Card.Title className="subtitle">
-            {props.subTitle}  // TODO: translate subtitles
+            {props.subTitle}  {/*TODO: translate subtitles*/}
           </Card.Title>
           <Card.Text className="text">
-            {translations[props.cardLang].text}
+            {translations[props.lang].text}
           </Card.Text>
         </Card.Body>
       </Card>
