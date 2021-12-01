@@ -3,7 +3,6 @@ import SingleCard from "./SingleCard";
 import { CardGroup, Container, Row, Col } from "react-bootstrap";
 import "./CardsContainer.css";
 
-
 function CardsContainer() {
   const [cards, setCards] = useState([
     {
@@ -60,7 +59,12 @@ function CardsContainer() {
           return (
            
               <Col  lg={3} md={6} sm={6} xs={12} key={index}>
-                <SingleCard name={c.name} title={c.title} subTitle={c.subTitle} content={c.content}  />
+                <SingleCard 
+                    name={c.name} 
+                    title={c.title} 
+                    subTitle={c.subTitle}
+                    cardLang={c.lang} 
+                 />
               </Col>
             
           );

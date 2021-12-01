@@ -1,34 +1,17 @@
-import Button from "react-bootstrap/Button";
+import Button from 'react-bootstrap/Button'
+import {useState, useEffect} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import CardsContainer from './Components/CardsContainer';
+import Footer from './Components/Footer';
+import Header from './Components/Header';
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import CardsContainer from "./Components/CardsContainer";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import { useEffect, useState } from "react";
 
 function App() {
-  // const [dark, setDark] = useState(false);
-
-  // useEffect(() => {
-  //   let current = new Date();
-
-  //   let cTime = current.getHours();
-  //   if(cTime < 6 || cTime>20){
-  //     setDark(true)
-  //   }else{
-  //     setDark(false)
-  //   }
-  // }, []);
-
-  // useEffect(()=>{
-  //   if(dark){
-  //     document.body.classList.add("dark");
-  //   }else{
-  //     document.body.classList.remove("dark");
-  //   }
-    
-  // },[dark])
+  
+  // set language
+  const [appLang,setLang] = useState('en-US');
+  
   const setDarkMode = enabled => {
     const body = document.getElementById("body");
     body.className = enabled ? "bootstrap-dark" : "bootstrap";
@@ -38,6 +21,16 @@ function App() {
   const darkModeEnabled = window.matchMedia('(prefers-color-scheme: dark)').matches;
   setDarkMode(darkModeEnabled);
 
+  const getLang = () => {
+          try {
+              const navLang = window.navigator.language? window.navigator.language:'en-US';
+              setLang(navLang);
+              console.info(`Set language to ${navLang}`);
+          } catch (err) {
+              console.error(err.error);
+          }
+    }
+  
   // detect changes after the website has loaded
   window.matchMedia('(prefers-color-scheme: dark)')
           .addEventListener('change', event => {
@@ -47,11 +40,18 @@ function App() {
               setDarkMode(false);
             }
           });
+  
+  // load lang
+  useEffect(() => {
+      getLang();
+  }, []);
+  // appLang <-
+
   return (
     <div className="App">
-      <Header></Header>
-      <CardsContainer></CardsContainer>
-      <Footer></Footer>
+        <Header lang = { appLang }/>
+        <CardsContainer lang = { appLang }/>
+        <Footer lang = { appLang }/>
     </div>
   );
 }

@@ -4,54 +4,17 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/*--------- CSS animated Background ----------*/
-
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 
-  background: linear-gradient(120deg,  #00983a 10%, #48aa51, #6fbb68, #91cd82, #b0df9c, #b0df9c, #b0df9c, #b0df9c, #91cd82, #6fbb68, #48aa51, #00983a);
-  background-size: 200% 200%;
-  -webkit-animation: Gradient 20s ease-in-out infinite;
-  -moz-animation: Gradient 20s ease-in-out infinite;
-  animation: Gradient 20s ease-in-out infinite;
+  background: linear-gradient(120deg, #7dc1f9, #b1aef9, #ff82a0, #FBAD5F);
+  background-size: 140% 140%;
+  -webkit-animation: Gradient 8s ease-in-out infinite;
+  -moz-animation: Gradient 8s ease-in-out infinite;
+  animation: Gradient 8s ease-in-out infinite;
 }
 
 .bootstrap-dark {
@@ -68,6 +31,7 @@ body {
 
 
 @-webkit-keyframes Gradient {
+
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
@@ -83,8 +47,10 @@ body {
   100%{background-position:0% 50%}
 }
 
+/* !!!! background: linear-gradient(120deg, #7dc1f9, #b1aef9, #ff82a0, #FBAD5F) !!!!*/
+/* original: linear-gradient( #7dc1f9, #b1aef9, #e795d9, #ff82a0, #fb845f)*/
 
 
-/*--------- CSS animated Background ----------*/
+
 
 
