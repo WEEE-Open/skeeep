@@ -6,49 +6,29 @@ import "./CardsContainer.css";
 function CardsContainer(props) {
 	const [cards, setCards] = useState([
 		{
-			name: "inginfbot",
-			title: "inginf_bot",
-			subTitle: "Frase riassuntiva d’effeto",
-			content: `Lorem ipsum dolor sit amet,
-      consectetuer adipiscing elit, sed
-      diam nonummy nibh euismod
-      tincidunt ut laoreet dolore`,
-		},
-		{
 			name: "politools",
 			title: "PoliTools",
-			subTitle: "Frase riassuntiva d’effeto",
-			content: `Lorem ipsum dolor sit amet,
-      consectetuer adipiscing elit, sed
-      diam nonummy nibh euismod
-      tincidunt ut laoreet dolore`,
+			url: "https://chrome.google.com/webstore/detail/politools/fbbjhoaakfhbggkegckmjafkffaofnkd?hl=it",
 		},
 		{
-			name: "politogruppibot",
-			title: "PoliToGruppiBot",
-			subTitle: "Frase riassuntiva d’effeto",
-			content: `Lorem ipsum dolor sit amet,
-      consectetuer adipiscing elit, sed
-      diam nonummy nibh euismod
-      tincidunt ut laoreet dolore`,
-		},
-		{
-			name: "sonousciteledate",
-			title: "sonousciteledate.it",
-			subTitle: "Frase riassuntiva d’effeto",
-			content: `Lorem ipsum dolor sit amet,
-      consectetuer adipiscing elit, sed
-      diam nonummy nibh euismod
-      tincidunt ut laoreet dolore`,
+			name: "inginfbot",
+			title: "inginf_bot",
+			url: "https://t.me/inginf_bot",
 		},
 		{
 			name: "studyplanner",
 			title: "Study Planner",
-			subTitle: "Frase riassuntiva d’effeto",
-			content: `Lorem ipsum dolor sit amet,
-      consectetuer adipiscing elit, sed
-      diam nonummy nibh euismod
-      tincidunt ut laoreet dolore`,
+			url: "https://github.com/e-caste/study-planner",
+		},
+		{
+			name: "politogruppibot",
+			title: "PoliToGruppiBot",
+			url: "https://t.me/politogruppibot",
+		},
+		{
+			name: "sonousciteledate",
+			title: "sonousciteledate.it",
+			url: "https://sonousciteledate.it",
 		},
 	]);
 
@@ -61,7 +41,7 @@ function CardsContainer(props) {
 							<SingleCard 
 								name={c.name} 
 								title={c.title} 
-								subTitle={c.subTitle}
+								url={c.url}
 								lang={props.lang}
 							/>
 						</Col>
