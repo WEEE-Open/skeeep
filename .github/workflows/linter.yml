@@ -41,4 +41,3 @@ jobs:
           github_token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
           git_name: "weee-open-bot"
           git_email: "weee-open-bot@users.noreply.github.com"
-          neutral_check_on_warning: true
