@@ -16,10 +16,10 @@ function SingleCard(props) {
 						<img src={imageSrc} alt={props.name}/>
 					</div>
 					<Card.Title className="subtitle">
-						{props.subTitle}  {/*TODO: translate subtitles*/}
+						{translations[props.lang][props.name].subtitle}
 					</Card.Title>
 					<Card.Text className="text">
-						{translations[props.lang].text}
+						{translations[props.lang][props.name].description}
 					</Card.Text>
 				</Card.Body>
 			</Card>
