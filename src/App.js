@@ -5,12 +5,12 @@ import "./App.css";
 import CardsContainer from "./Components/CardsContainer";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
-
+import translations from "./Components/Translations";
 
 function App() {
   
 	// set language
-	const [appLang,setLang] = useState("en-US");
+	const [appLang, setLang] = useState("en");
   
 	const setDarkMode = enabled => {
 		const body = document.getElementById("body");
@@ -21,26 +21,23 @@ function App() {
 	const darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)").matches;
 	setDarkMode(darkModeEnabled);
 
+	// detect changes after the website has loaded
+	window.matchMedia("(prefers-color-scheme: dark)")
+		.addEventListener("change", event => setDarkMode(event.matches));
+
 	const getLang = () => {
 		try {
-			const navLang = window.navigator.language? window.navigator.language:"en-US";
+			const lang = window.navigator.language.includes("-") ?
+				window.navigator.language.split("-")[0].toLowerCase() :
+				window.navigator.language.toLowerCase();
+			const navLang = translations.availableLanguages.includes(lang) ? lang : "en";
 			setLang(navLang);
 			console.info(`Set language to ${navLang}`);
 		} catch (err) {
 			console.error(err.error);
 		}
 	};
-  
-	// detect changes after the website has loaded
-	window.matchMedia("(prefers-color-scheme: dark)")
-		.addEventListener("change", event => {
-			if (event.matches) {
-				setDarkMode(true);
-			} else {
-				setDarkMode(false);
-			}
-		});
-  
+
 	// load lang
 	useEffect(() => {
 		getLang();

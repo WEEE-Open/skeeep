@@ -1,5 +1,9 @@
 const translations = {
-	"en-US": {
+	"availableLanguages": [
+		"en",
+		"it",
+	],
+	"en": {
 		"footer" : "This is the footer",
 		"inginfbot": {
 			"subtitle": "A Telegram bot to find other PoliTo Computer Engineers",
@@ -57,7 +61,7 @@ const translations = {
 				"Linux/macOS, seleziona le slide che devi studiare e/o le videolezioni che devi guardare, e Study " +
 				"Planner ti darà una stima di quanti giorni dovrai studiare per quell'esame.",
 		},
-	}
+	},
 };
 
 export default translations;
