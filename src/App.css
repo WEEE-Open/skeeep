@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Quicksand:wght@400;700&display=swap");
 
-.App {text-align: center;}
+.App { text-align: center; }
 
 body {
   min-height: 100vh;
@@ -9,7 +9,6 @@ body {
   background: linear-gradient(120deg, #7dc1f9, #b1aef9, #ff82a0, #fbad5f);
   background-size: 140% 140%;
   animation: Gradient 8s ease-in-out infinite;
-
   animation: Gradient 8s ease-in-out infinite;
   animation: Gradient 8s ease-in-out infinite;
 }
@@ -23,7 +22,6 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
 
 @keyframes Gradient {
 
