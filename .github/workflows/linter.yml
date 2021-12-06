@@ -14,7 +14,7 @@ on:
 
 jobs:
   run-linters:
-    name: Run linters
+    name: Run ESLint
     runs-on: ubuntu-latest
 
     steps:
@@ -32,9 +32,9 @@ jobs:
         run: npm ci
 
       - name: Run ESLint
-        run: eslint --fix .
+        run: npx --no-install eslint --ext .js --fix --no-color --format json  "."
 
-      - name: Set up git
+      - name: Set up git credentials
         run: |
           git config --global user.email "weee-open-bot@users.noreply.github.com"
           git config --global user.name "weee-open-bot"
