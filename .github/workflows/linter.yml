@@ -16,7 +16,7 @@ jobs:
   run-eslint:
     name: Run ESLint
     runs-on: ubuntu-latest
-    if: github.event.pusher.name != "weee-open-bot"
+    if: ${{ github.event.pusher.name != 'weee-open-bot' }}
 
     steps:
       - name: Check out Git repository
@@ -47,7 +47,7 @@ jobs:
   run-stylelint:
     name: Run Stylelint
     runs-on: ubuntu-latest
-    if: github.event.pusher.name != "weee-open-bot"
+    if: ${{ github.event.pusher.name != 'weee-open-bot' }}
 
     steps:
       - name: Check out Git repository
