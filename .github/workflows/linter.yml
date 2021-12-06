@@ -28,16 +28,17 @@ jobs:
         with:
           node-version: 17
 
-      # ESLint (and Prettier) must be in `package.json`
       - name: Install Node.js dependencies
         run: npm ci
 
-      - name: Run linters
-        uses: wearerequired/lint-action@v1
-        with:
-          eslint: true
-          prettier: false
-          auto_fix: true
-          github_token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
-          git_name: "weee-open-bot"
-          git_email: "weee-open-bot@users.noreply.github.com"
+      - name: Run ESLint
+        run: eslint --fix .
+
+      - name: Set up git
+        run: |
+          git config --global user.email "weee-open-bot@users.noreply.github.com"
+          git config --global user.name "weee-open-bot"
+
+      - name: Commit and push changes
+        run: |
+          git commit -am "Fix code style issues with ESLint" && git push || echo "No changes to commit"
