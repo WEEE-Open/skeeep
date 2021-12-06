@@ -37,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "stylelint": "^14.1.0",
+    "stylelint-config-standard": "^24.0.0"
   }
 }
