@@ -13,8 +13,8 @@ on:
       - main
 
 jobs:
-  run-eslint:
-    name: Run ESLint
+  run-linters:
+    name: Run Linters
     runs-on: ubuntu-latest
     if: ${{ github.event.pusher.name != 'weee-open-bot' }}
 
@@ -31,46 +31,25 @@ jobs:
 
       - name: Install Node.js dependencies
         run: npm ci
+
+      - name: Set up git credentials
+        run: |
+          git config --global user.email "weee-open-bot@users.noreply.github.com"
+          git config --global user.name "weee-open-bot"
 
       - name: Run ESLint
         run: npx --no-install eslint --ext .js --fix --no-color --format json  "." || true
 
-      - name: Set up git credentials
+      - name: Commit ESLint changes
         run: |
-          git config --global user.email "weee-open-bot@users.noreply.github.com"
-          git config --global user.name "weee-open-bot"
-
-      - name: Commit and push changes
-        run: |
-          git commit -am "Fix code style issues with ESLint" && git push || echo "No changes to commit"
-
-  run-stylelint:
-    name: Run Stylelint
-    runs-on: ubuntu-latest
-    if: ${{ github.event.pusher.name != 'weee-open-bot' }}
-
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 17
-
-      - name: Install Node.js dependencies
-        run: npm ci
+          git commit -am "Fix code style issues with ESLint" || echo "No changes to commit"
 
       - name: Run Stylelint
         run: npx stylelint --fix "**/*.css" || true
 
-      - name: Set up git credentials
+      - name: Commit Stylelint changes
         run: |
-          git config --global user.email "weee-open-bot@users.noreply.github.com"
-          git config --global user.name "weee-open-bot"
+          git commit -am "Fix code style issues with Stylelint" || echo "No changes to commit"
 
-      - name: Commit and push changes
-        run: |
-          git commit -am "Fix code style issues with Stylelint" && git push || echo "No changes to commit"
+      - name: Push changes
+        run: git push
