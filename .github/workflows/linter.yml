@@ -13,7 +13,7 @@ on:
       - main
 
 jobs:
-  run-linters:
+  run-eslint:
     name: Run ESLint
     runs-on: ubuntu-latest
 
@@ -42,3 +42,33 @@ jobs:
       - name: Commit and push changes
         run: |
           git commit -am "Fix code style issues with ESLint" && git push || echo "No changes to commit"
+
+  run-stylelint:
+    name: Run Stylelint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 17
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Run Stylelint
+        run: npx stylelint --fix "**/*.css"
+
+      - name: Set up git credentials
+        run: |
+          git config --global user.email "weee-open-bot@users.noreply.github.com"
+          git config --global user.name "weee-open-bot"
+
+      - name: Commit and push changes
+        run: |
+          git commit -am "Fix code style issues with Stylelint" && git push || echo "No changes to commit"
