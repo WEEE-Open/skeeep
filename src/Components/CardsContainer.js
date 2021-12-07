@@ -37,7 +37,7 @@ function CardsContainer(props) {
 			<Row>
 				{cards.map((c, index) => {
 					return (
-						<Col  lg={3} md={6} sm={6} xs={12} key={index}>
+						<Col  lg={4} md={6} sm={6} xs={12} key={index}>
 							<SingleCard 
 								name={c.name} 
 								title={c.title} 
