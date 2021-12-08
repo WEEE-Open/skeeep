@@ -2,6 +2,7 @@ const translations = {
 	"availableLanguages": [
 		"en",
 		"it",
+		"persian"
 	],
 	"en": {
 		"footer" : "This is the footer",
@@ -60,6 +61,34 @@ const translations = {
 			"description": "Scarica questa applicazione desktop gratuita ed open source sul tuo computer Windows/" +
 				"Linux/macOS, seleziona le slide che devi studiare e/o le videolezioni che devi guardare, e Study " +
 				"Planner ti darà una stima di quanti giorni dovrai studiare per quell'esame.",
+		},
+	},
+	"persian": {
+		"footer" : "محل قرار گیری فوتر",
+		"inginfbot": {
+			"subtitle": "ربات تلگرامی برای پیدا کردن بقیه مهندسین کامپیوتر پلیتو",
+			"description": 
+				".با استفاده از این ربات شما میتوانید به راحنی همکلاسی های خود را در گروه های منظم پیدا کنید و به بحث و اظهار نظر درباره موضوعات مختلف بپردازید",
+		},
+		"politools": {
+			"subtitle": "یک افزونه مرورگر برای پرتال دانشجویی پلیتو",
+			"description": "افزودن کاربردهای مختلف به پرتال دانشجویی پلیتو که کاربری روزانه شما را بهبود میبخشد. کاملا رایگان و توسعه داده شده توسط دانشجویان.",
+		},
+		"politogruppibot": {
+			"subtitle": "ربات تلگرامی برای پیدا کردن بقیه مهندسین پلیتو",
+			"description": "افرادی را که در دوره های مشابه شما شرکت میکنند و یا دارای علایق مشترک با هم هستید را بیابید. گروه دلخواه خود را بسازید " +
+				"یا به گروه های پیش ساخته بپیوندید. برای تمامی دانشجویان پلیتو.",
+		},
+		"sonousciteledate": {
+			"subtitle": "تاریخ امتحانات مشخص شده؟",
+			"description": "یک وبسایت برای اطلاع رسانی تاریخ ثبت نام برای امتحانات" +
+				"که به طور متناوب بروز رسانی میشود.",
+		},
+		"studyplanner": {
+			"subtitle": "یک اپلیکیشن دستکتاپ چند پلتفرمی که زمان مورد نیاز برای مطالعه یک درس را تخمین میزند",
+			"description": "این اپلیکیشن رایگان اپن سورس را برای سیستم ویندوز/مک/لینوکس خود دانلود کنید, " +
+				"اسلاید هایی را که باید مطالعه کنید و یا ویدیوهایی را که باید مشاهده کنید را انتخاب کنید و این اپلیکیشن " +
+				"برای شما زمان مورد نیاز برای مطالعه آنها را تخمین میزند.",
 		},
 	},
 };
