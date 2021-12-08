@@ -67,6 +67,11 @@ const translations = {
 			"description": "Scarica questa applicazione desktop gratuita ed open source sul tuo computer Windows/" +
 				"Linux/macOS, seleziona le slide che devi studiare e/o le videolezioni che devi guardare, e Study " +
 				"Planner ti darà una stima di quanti giorni dovrai studiare per quell'esame.",
+		},"skeeelled": {
+			"subtitle": "A cross-platform desktop app to estimate the time needed to study for an exam",
+			"description": "Download this free open source desktop application to your Windows/Linux/macOS computer, " +
+				"select the slides you have to study and/or the video lectures you have to watch, and Study Planner " +
+				"will give you an estimate of time required to study them in terms of days.",
 		},
 	},
 	"fa": {

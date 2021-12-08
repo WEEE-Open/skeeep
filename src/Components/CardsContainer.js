@@ -38,7 +38,7 @@ function CardsContainer(props) {
 	]);
 
 	return (
-		<Container className="cardsContainer">
+		<Container className="cardsContainer" >
 			<Row>
 				{cards.map((c, index) => {
 					return (
