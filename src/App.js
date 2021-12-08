@@ -11,19 +11,29 @@ function App() {
   
 	// set language
 	const [appLang, setLang] = useState("en");
+	const[dark,setDark] = useState(false)
+	
   
 	const setDarkMode = enabled => {
 		const body = document.getElementById("body");
 		body.className = enabled ? "bootstrap-dark" : "bootstrap";
+		if(dark !== enabled){
+			setDark(enabled)
+		}
 	};
 
 	// detect dark mode and change theme accordingly
 	const darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)").matches;
 	setDarkMode(darkModeEnabled);
+	
 
 	// detect changes after the website has loaded
 	window.matchMedia("(prefers-color-scheme: dark)")
-		.addEventListener("change", event => setDarkMode(event.matches));
+		.addEventListener("change", event => {
+			setDarkMode(event.matches);
+		});
+
+
 
 	const getLang = () => {
 		try {
@@ -47,7 +57,7 @@ function App() {
 	return (
 		<div className="App">
 			<Header lang = { appLang }/>
-			<CardsContainer lang = { appLang }/>
+			<CardsContainer dark={dark} lang = { appLang }/>
 			<Footer lang = { appLang }/>
 		</div>
 	);

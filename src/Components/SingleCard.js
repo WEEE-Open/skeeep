@@ -5,7 +5,13 @@ import translations from "./Translations";
 
 function SingleCard(props) {
 
-	const imageSrc = `/icons/${props.name}.svg`;
+	//check if the dark icons should be loaded or not and change the name of icons
+	let imageSrc;
+	if(props.dark){
+		imageSrc = `/icons/${props.name}-dark.svg`;
+	}else{
+		imageSrc = `/icons/${props.name}.svg`;
+	}
 	console.log(props.lang,props.name)
   
 	return (

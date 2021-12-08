@@ -48,6 +48,7 @@ function CardsContainer(props) {
 								title={c.title} 
 								url={c.url}
 								lang={props.lang}
+								dark={props.dark}
 							/>
 						</Col>
 					);
