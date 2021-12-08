@@ -63,5 +63,7 @@
 }
 .fa .text{
   font-family: Vazir;
+  direction: rtl;
+  line-height: 20px;
 }
 
