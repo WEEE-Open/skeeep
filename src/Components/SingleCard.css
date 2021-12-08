@@ -57,3 +57,11 @@
 .bootstrap-dark .card .text {
   color: #dcdde1;
 }
+
+.persian .subtitle{
+  font-family: Vazir;
+}
+.persian .text{
+  font-family: Vazir;
+}
+

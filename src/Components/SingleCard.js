@@ -12,12 +12,14 @@ function SingleCard(props) {
 	}else{
 		imageSrc = `/icons/${props.name}.svg`;
 	}
-	console.log(props.lang,props.name)
+	
+	//adding language name to the className of the card to have cusomized style for each language
+	const addClass = `card ${props.lang}` 
   
 	return (
 		<>
-		<a href={props.url} target="_blank">
-			<Card className="card">
+		<a href={props.url} target="blank">
+			<Card className={addClass}>
 				<Card.Body>
 					<Card.Title className="title">{props.title}</Card.Title>
 					<div className="icon">

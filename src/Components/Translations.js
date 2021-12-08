@@ -95,6 +95,11 @@ const translations = {
 			"description": "این اپلیکیشن رایگان اپن سورس را برای سیستم ویندوز/مک/لینوکس خود دانلود کنید, " +
 				"اسلاید هایی را که باید مطالعه کنید و یا ویدیوهایی را که باید مشاهده کنید را انتخاب کنید و این اپلیکیشن " +
 				"برای شما زمان مورد نیاز برای مطالعه آنها را تخمین میزند.",
+		},"skeeelled": {
+			"subtitle": "A cross-platform desktop app to estimate the time needed to study for an exam",
+			"description": "Download this free open source desktop application to your Windows/Linux/macOS computer, " +
+				"select the slides you have to study and/or the video lectures you have to watch, and Study Planner " +
+				"will give you an estimate of time required to study them in terms of days.",
 		},
 	},
 };
