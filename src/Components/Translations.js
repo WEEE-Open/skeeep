@@ -2,7 +2,7 @@ const translations = {
 	"availableLanguages": [
 		"en",
 		"it",
-		"persian",
+		"fa",
 	],
 	"en": {
 		"footer" : "This is the footer",
@@ -69,7 +69,7 @@ const translations = {
 				"Planner ti darà una stima di quanti giorni dovrai studiare per quell'esame.",
 		},
 	},
-	"persian": {
+	"fa": {
 		"footer" : "محل قرار گیری فوتر",
 		"inginfbot": {
 			"subtitle": "ربات تلگرامی برای پیدا کردن بقیه مهندسین کامپیوتر پلیتو",
