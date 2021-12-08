@@ -5,6 +5,7 @@
 .bootstrap-dark .card {
   background-color: #3c3d3b;
 }
-.cardsContainer a:hover{
+
+.cardsContainer a:hover {
   text-decoration: none;
 }
