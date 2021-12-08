@@ -2,7 +2,7 @@ const translations = {
 	"availableLanguages": [
 		"en",
 		"it",
-		"persian"
+		"persian",
 	],
 	"en": {
 		"footer" : "This is the footer",
@@ -27,6 +27,12 @@ const translations = {
 				"be available. Frequently updated.",
 		},
 		"studyplanner": {
+			"subtitle": "A cross-platform desktop app to estimate the time needed to study for an exam",
+			"description": "Download this free open source desktop application to your Windows/Linux/macOS computer, " +
+				"select the slides you have to study and/or the video lectures you have to watch, and Study Planner " +
+				"will give you an estimate of time required to study them in terms of days.",
+		},
+		"skeeelled": {
 			"subtitle": "A cross-platform desktop app to estimate the time needed to study for an exam",
 			"description": "Download this free open source desktop application to your Windows/Linux/macOS computer, " +
 				"select the slides you have to study and/or the video lectures you have to watch, and Study Planner " +

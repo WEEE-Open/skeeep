@@ -6,9 +6,11 @@ import translations from "./Translations";
 function SingleCard(props) {
 
 	const imageSrc = `/icons/${props.name}.svg`;
+	console.log(props.lang,props.name)
   
 	return (
 		<>
+		<a href={props.url} target="_blank">
 			<Card className="card">
 				<Card.Body>
 					<Card.Title className="title">{props.title}</Card.Title>
@@ -23,6 +25,7 @@ function SingleCard(props) {
 					</Card.Text>
 				</Card.Body>
 			</Card>
+			</a>
 		</>
 	);
 }
