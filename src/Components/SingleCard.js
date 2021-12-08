@@ -14,25 +14,25 @@ function SingleCard(props) {
 	}
 	
 	//adding language name to the className of the card to have cusomized style for each language
-	const addClass = `card ${props.lang}` 
+	const addClass = `card ${props.lang}`; 
   
 	return (
 		<>
-		<a href={props.url} target="blank">
-			<Card className={addClass}>
-				<Card.Body>
-					<Card.Title className="title">{props.title}</Card.Title>
-					<div className="icon">
-						<img src={imageSrc} alt={props.name}/>
-					</div>
-					<Card.Title className="subtitle">
-						{translations[props.lang][props.name].subtitle}
-					</Card.Title>
-					<Card.Text className="text">
-						{translations[props.lang][props.name].description}
-					</Card.Text>
-				</Card.Body>
-			</Card>
+			<a href={props.url} target="blank">
+				<Card className={addClass}>
+					<Card.Body>
+						<Card.Title className="title">{props.title}</Card.Title>
+						<div className="icon">
+							<img src={imageSrc} alt={props.name}/>
+						</div>
+						<Card.Title className="subtitle">
+							{translations[props.lang][props.name].subtitle}
+						</Card.Title>
+						<Card.Text className="text">
+							{translations[props.lang][props.name].description}
+						</Card.Text>
+					</Card.Body>
+				</Card>
 			</a>
 		</>
 	);

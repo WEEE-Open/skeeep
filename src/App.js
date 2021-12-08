@@ -11,14 +11,14 @@ function App() {
   
 	// set language
 	const [appLang, setLang] = useState("en");
-	const[dark,setDark] = useState(false)
+	const[dark,setDark] = useState(false);
 	
   
 	const setDarkMode = enabled => {
 		const body = document.getElementById("body");
 		body.className = enabled ? "bootstrap-dark" : "bootstrap";
 		if(dark !== enabled){
-			setDark(enabled)
+			setDark(enabled);
 		}
 	};
 
