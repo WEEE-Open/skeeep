@@ -5,11 +5,21 @@ import translations from "./Translations";
 
 function SingleCard(props) {
 
-	const imageSrc = `/icons/${props.name}.svg`;
+	//check if the dark icons should be loaded or not and change the name of icons
+	let imageSrc;
+	if(props.dark){
+		imageSrc = `/icons/${props.name}-dark.svg`;
+	}else{
+		imageSrc = `/icons/${props.name}.svg`;
+	}
+	
+	//adding language name to the className of the card to have cusomized style for each language
+	const addClass = `card ${props.lang}` 
   
 	return (
 		<>
-			<Card className="card">
+		<a href={props.url} target="blank">
+			<Card className={addClass}>
 				<Card.Body>
 					<Card.Title className="title">{props.title}</Card.Title>
 					<div className="icon">
@@ -23,6 +33,7 @@ function SingleCard(props) {
 					</Card.Text>
 				</Card.Body>
 			</Card>
+			</a>
 		</>
 	);
 }
