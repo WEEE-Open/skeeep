@@ -1,6 +1,7 @@
 const translations = {
 	"availableLanguages": [
 		"en",
+		"zh",
 		"it",
 		"persian",
 	],
@@ -96,6 +97,36 @@ const translations = {
 				"اسلاید هایی را که باید مطالعه کنید و یا ویدیوهایی را که باید مشاهده کنید را انتخاب کنید و این اپلیکیشن " +
 				"برای شما زمان مورد نیاز برای مطالعه آنها را تخمین میزند.",
 		},"skeeelled": {
+			"subtitle": "A cross-platform desktop app to estimate the time needed to study for an exam",
+			"description": "Download this free open source desktop application to your Windows/Linux/macOS computer, " +
+				"select the slides you have to study and/or the video lectures you have to watch, and Study Planner " +
+				"will give you an estimate of time required to study them in terms of days.",
+		},
+	},
+	"zh": {
+		"footer" : "这是页脚",
+		"inginfbot": {
+			"subtitle": "Telegram 机器人，帮你找到其他的电脑工程师",
+			"description": "利用这台机器人，你能轻易地找到跟你同学科的夥伴，互相讨论考试科目及兴趣。规划整理所有的群组。",
+		},
+		"politools": {
+			"subtitle": "PoliTo 网站的浏览器伸展",
+			"description": "由学生团队开发的免费软体，替都理的教学平台增加功能，改善你的学生生活。"
+				,
+		},
+		"politogruppibot": {
+			"subtitle": "Telegram 机器人，帮你找到其他的都理同学",
+			"description": "找到与你同学科或兴趣相关的同学。只要你是都理的学生，我们欢迎你在这，创造或搜寻属于你的学生群组",
+		},
+		"sonousciteledate": {
+			"subtitle": "大考日期出来了吗?",
+			"description": "这个单页网站，会告诉你考试的时间跟日期。内容时常更新。",
+		},
+		"studyplanner": {
+			"subtitle": "跨平台的桌面程序，帮你估算每堂考试的准备时间",
+			"description": "将这个跨平台的开源桌上软体，下载到你 Windows/Linux/macOS 的系统中。输入需要研读的幻灯片及影片。学习规划者，将会提供你估计的读书时间。",
+		},
+		"skeeelled": {
 			"subtitle": "A cross-platform desktop app to estimate the time needed to study for an exam",
 			"description": "Download this free open source desktop application to your Windows/Linux/macOS computer, " +
 				"select the slides you have to study and/or the video lectures you have to watch, and Study Planner " +
