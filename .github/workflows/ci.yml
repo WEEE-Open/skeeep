@@ -60,3 +60,5 @@ jobs:
 
       - name: Deploy development instance
         run: npm run deploy
+        env:
+          CI: false  # this overrides the "treat warnings as errors" behavior
