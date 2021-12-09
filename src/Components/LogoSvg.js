@@ -1,13 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 
 
 
 //library: FramerMotion
 const LogoSvg = () => {
-
-
-	console.log("svg");
 
 	const letterS = {
 		visible: { opacity: 1, y:0, transition:{ delay:0.3 }},
