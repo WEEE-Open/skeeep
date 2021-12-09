@@ -59,4 +59,4 @@ jobs:
         run: git push
 
       - name: Deploy development instance
-        run: npm deploy
+        run: npm run deploy
