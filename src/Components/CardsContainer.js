@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import SingleCard from "./SingleCard";
-import { CardGroup, Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./CardsContainer.css";
 
 function CardsContainer(props) {
