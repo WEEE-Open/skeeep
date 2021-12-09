@@ -1,5 +1,4 @@
-import Button from "react-bootstrap/Button";
-import {useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import CardsContainer from "./Components/CardsContainer";
