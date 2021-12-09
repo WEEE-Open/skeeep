@@ -16,11 +16,11 @@ const LogoSvg = () => {
 	};
 	const letterP = {
 		visible: { opacity: 1, x:0, transition:{ delay:1}},
-		hidden: { opacity: 1, x: -112, staggerChildren: 0.5 }
+		hidden: { opacity: 1, x: -112, staggerchildren: 0.5 }
 	};
-	const eeEs = {
+	const eeeEs = {
 		visible: { opacity: 1, x:0, transition:{ duration:1 }},
-		hidden: { opacity: 0, x:-30, staggerChildren: 0.5 }
+		hidden: { opacity: 0, x:-30, staggerchildren: 0.5 }
 	};
 
 	const lightgreen = {
@@ -102,7 +102,7 @@ const LogoSvg = () => {
 				</motion.g>
 				<motion.g initial="hidden"
 					animate="visible"
-					variants={eeEs}
+					variants={eeeEs}
 					id={"eees"}>
 					<motion.g
 						initial="hidden"
