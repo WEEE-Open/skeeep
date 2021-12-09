@@ -78,6 +78,8 @@ jobs:
 
       - name: Run build
         run: npm run build
+        env:
+          CI: false  # this overrides the "treat warnings as errors behavior"
 
       - name: Pull linter changes
         run: git pull
