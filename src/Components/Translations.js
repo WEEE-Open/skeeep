@@ -112,7 +112,7 @@ const translations = {
 		"politools": {
 			"subtitle": "PoliTo 网站的浏览器伸展",
 			"description": "由学生团队开发的免费软体，替都理的教学平台增加功能，改善你的学生生活。"
-				,
+			,
 		},
 		"politogruppibot": {
 			"subtitle": "Telegram 机器人，帮你找到其他的都理同学",
