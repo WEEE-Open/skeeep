@@ -49,3 +49,43 @@ jobs:
 
       - name: Push changes
         run: git push
+
+  build-frontend:
+    name: Build Frontend
+    runs-on: ubuntu-latest
+    if: ${{ github.event.pusher.name != 'weee-open-bot' }}
+    needs:
+      - run-linters
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 17
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Set up git credentials
+        run: |
+          git config --global user.email "weee-open-bot@users.noreply.github.com"
+          git config --global user.name "weee-open-bot"
+
+      - name: Run build
+        run: npm run build
+
+      - name: Pull linter changes
+        run: git pull
+
+      - name: Commit build changes
+        run: |
+          git add build/ --force
+          git commit -m "Update build" || echo "No changes to commit"
+
+      - name: Push changes
+        run: git push
