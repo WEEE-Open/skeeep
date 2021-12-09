@@ -3,11 +3,11 @@
 }
 
 .bootstrap .card {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgb(255 255 255 / 60%);
 }
 
 .bootstrap-dark .card {
-  background-color: rgba(60, 61, 59, 0.6);
+  background-color: rgb(60 61 59 / 60%);
 }
 
 .cardsContainer a:hover {
