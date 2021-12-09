@@ -9,3 +9,7 @@ A scrollable landing page that allows all PoliTo students to quickly find useful
 0. Install [Node.js](https://nodejs.org/en/) (we're using v17)
 1. `npm install`
 2. `npm start`
+
+### Development instance
+
+👉 **[here](https://weee-open.github.io/skeeep/)** 👈
