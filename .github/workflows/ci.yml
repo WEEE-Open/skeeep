@@ -50,7 +50,7 @@ jobs:
       - name: Run build
         run: npm run build
         env:
-          CI: false  # this overrides the "treat warnings as errors behavior"
+          CI: false  # this overrides the "treat warnings as errors" behavior
 
       - name: Commit build changes
         run: |
@@ -59,6 +59,22 @@ jobs:
 
       - name: Push changes
         run: git push
+
+  deploy-dev-instance:
+    name: Deploy development instance
+    runs-on: ubuntu-latest
+    if: ${{ github.event.pusher.name != 'weee-open-bot' }}
+    needs:
+      - run-ci
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
+
+      - name: Pull CI changes
+        run: git pull
 
       - name: Deploy build to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
