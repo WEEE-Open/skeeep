@@ -55,39 +55,8 @@ jobs:
         run: |
           git commit -am "Fix code style issues with Stylelint" || echo "No changes to commit"
 
-      - name: Run build
-        run: npm run build
-        env:
-          CI: false  # this overrides the "treat warnings as errors" behavior
-
-      - name: Commit build changes
-        run: |
-          git add build/ --force
-          git commit -m "Update build" || echo "No changes to commit"
-
       - name: Push changes
         run: git push
 
-  deploy-dev-instance:
-    name: Deploy development instance
-    runs-on: ubuntu-latest
-    if: ${{ github.event.pusher.name != 'weee-open-bot' }}
-    needs:
-      - run-ci
-
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
-
-      - name: Pull CI changes
-        run: git pull
-
-      - name: Deploy build to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
-          publish_dir: ./build
-          user_name: 'weee-open-bot'
-          user_email: 'weee-open-bot@users.noreply.github.com'
+      - name: Deploy development instance
+        run: npm deploy
