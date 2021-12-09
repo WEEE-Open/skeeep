@@ -34,7 +34,7 @@ jobs:
           git config --global user.name "weee-open-bot"
 
       - name: Run ESLint
-        run: npx --no-install eslint --ext .js --fix --no-color --format json --ignore-path "build"  "." || true
+        run: npx --no-install eslint --ext .js --fix --no-color --format json --ignore-pattern "build/*"  "." || true
 
       - name: Commit ESLint changes
         run: |
