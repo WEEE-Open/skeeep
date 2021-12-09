@@ -91,3 +91,9 @@ jobs:
 
       - name: Push changes
         run: git push
+
+      - name: Deploy build to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
+          publish_dir: ./build
