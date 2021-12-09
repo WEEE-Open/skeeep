@@ -1,3 +1,4 @@
+import React from "react";
 import translations from "./Translations";
 
 function Footer(props) {
