@@ -6,7 +6,7 @@ const translations = {
 		"persian",
 	],
 	"en": {
-		"footer" : "This is the footer",
+		"footer" : "is a cured selection of useful resources for students made by",
 		"inginfbot": {
 			"subtitle": "A Telegram bot to find other PoliTo Computer Engineers",
 			"description": "Using this bot you can easily find people from courses you're enrolled in, discuss exams " +
@@ -39,7 +39,7 @@ const translations = {
 		},
 	},
 	"it": {
-		"footer" : "questo è il piè di pagina",
+		"footer" : "è una curata selezione di risorse utili agli studenti realizzata da",
 		"inginfbot": {
 			"subtitle": "Un bot Telegram per trovare altri Ingegneri Informatici del PoliTo",
 			"description": "Usando questo bot puoi trovare facilmente altri studenti dei corsi che segui, discutere " +
@@ -73,7 +73,7 @@ const translations = {
 		},
 	},
 	"persian": {
-		"footer" : "محل قرار گیری فوتر",
+		"footer" : "",  // TODO: translate
 		"inginfbot": {
 			"subtitle": "ربات تلگرامی برای پیدا کردن بقیه مهندسین کامپیوتر پلیتو",
 			"description": 
@@ -105,7 +105,7 @@ const translations = {
 		},
 	},
 	"zh": {
-		"footer" : "这是页脚",
+		"footer" : "",  // TODO: translate
 		"inginfbot": {
 			"subtitle": "Telegram 机器人，帮你找到其他的电脑工程师",
 			"description": "利用这台机器人，你能轻易地找到跟你同学科的夥伴，互相讨论考试科目及兴趣。规划整理所有的群组。",
