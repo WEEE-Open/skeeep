@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/skeeep/static/css/main.5ac19286.chunk.css",
-    "main.js": "/skeeep/static/js/main.c917ec5d.chunk.js",
-    "main.js.map": "/skeeep/static/js/main.c917ec5d.chunk.js.map",
-    "runtime-main.js": "/skeeep/static/js/runtime-main.c8e45c6b.js",
-    "runtime-main.js.map": "/skeeep/static/js/runtime-main.c8e45c6b.js.map",
-    "static/css/2.0a9ec390.chunk.css": "/skeeep/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.a0399f1d.chunk.js": "/skeeep/static/js/2.a0399f1d.chunk.js",
-    "static/js/2.a0399f1d.chunk.js.map": "/skeeep/static/js/2.a0399f1d.chunk.js.map",
-    "static/js/3.527e1813.chunk.js": "/skeeep/static/js/3.527e1813.chunk.js",
-    "static/js/3.527e1813.chunk.js.map": "/skeeep/static/js/3.527e1813.chunk.js.map",
-    "index.html": "/skeeep/index.html",
-    "static/css/2.0a9ec390.chunk.css.map": "/skeeep/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.5ac19286.chunk.css.map": "/skeeep/static/css/main.5ac19286.chunk.css.map",
-    "static/js/2.a0399f1d.chunk.js.LICENSE.txt": "/skeeep/static/js/2.a0399f1d.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/skeeep/static/media/Vazir-Regular.a24d67ce.ttf"
+    "main.css": "https://weee-open.github.io/skeeep/static/css/main.532f38b6.chunk.css",
+    "main.js": "https://weee-open.github.io/skeeep/static/js/main.5a18082d.chunk.js",
+    "main.js.map": "https://weee-open.github.io/skeeep/static/js/main.5a18082d.chunk.js.map",
+    "runtime-main.js": "https://weee-open.github.io/skeeep/static/js/runtime-main.d7ef32d5.js",
+    "runtime-main.js.map": "https://weee-open.github.io/skeeep/static/js/runtime-main.d7ef32d5.js.map",
+    "static/css/2.0a9ec390.chunk.css": "https://weee-open.github.io/skeeep/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.28064b5d.chunk.js": "https://weee-open.github.io/skeeep/static/js/2.28064b5d.chunk.js",
+    "static/js/2.28064b5d.chunk.js.map": "https://weee-open.github.io/skeeep/static/js/2.28064b5d.chunk.js.map",
+    "static/js/3.7cacfdd0.chunk.js": "https://weee-open.github.io/skeeep/static/js/3.7cacfdd0.chunk.js",
+    "static/js/3.7cacfdd0.chunk.js.map": "https://weee-open.github.io/skeeep/static/js/3.7cacfdd0.chunk.js.map",
+    "index.html": "https://weee-open.github.io/skeeep/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "https://weee-open.github.io/skeeep/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.532f38b6.chunk.css.map": "https://weee-open.github.io/skeeep/static/css/main.532f38b6.chunk.css.map",
+    "static/js/2.28064b5d.chunk.js.LICENSE.txt": "https://weee-open.github.io/skeeep/static/js/2.28064b5d.chunk.js.LICENSE.txt",
+    "static/media/App.css": "https://weee-open.github.io/skeeep/static/media/Vazir-Regular.a24d67ce.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.c8e45c6b.js",
+    "static/js/runtime-main.d7ef32d5.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.a0399f1d.chunk.js",
-    "static/css/main.5ac19286.chunk.css",
-    "static/js/main.c917ec5d.chunk.js"
+    "static/js/2.28064b5d.chunk.js",
+    "static/css/main.532f38b6.chunk.css",
+    "static/js/main.5a18082d.chunk.js"
   ]
 }
