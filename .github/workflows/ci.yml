@@ -59,6 +59,9 @@ jobs:
         run: git push
 
       - name: Deploy development instance
-        run: npm run deploy
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "weee-open-bot <weee-open-bot@users.noreply.github.com>"
         env:
           CI: false  # this overrides the "treat warnings as errors" behavior
+          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_BOT_PAT }}
