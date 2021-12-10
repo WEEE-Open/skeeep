@@ -1,4 +1,4 @@
-name: CI
+name: CD
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   run-ci:
-    name: Run CI
+    name: Run CD
     runs-on: ubuntu-latest
     if: ${{ github.event.pusher.name != 'weee-open-bot' }}
 
@@ -21,7 +21,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 17
+          node-version: 16
 
       - name: Cache dependencies
         uses: actions/cache@v2
@@ -39,19 +39,10 @@ jobs:
           git config --global user.email "weee-open-bot@users.noreply.github.com"
           git config --global user.name "weee-open-bot"
 
-      - name: Run ESLint
-        run: npx --no-install eslint --ext .js --fix --no-color --format json --ignore-pattern "build/*"  "." || true
-
-      - name: Commit ESLint changes
+      - name: Deploy development instance
         run: |
-          git commit -am "Fix code style issues with ESLint" || echo "No changes to commit"
-
-      - name: Run Stylelint
-        run: npx stylelint --ignore-pattern "**/*.min.css" --ignore-pattern "build/*" --fix "**/*.css" || true
-
-      - name: Commit Stylelint changes
-        run: |
-          git commit -am "Fix code style issues with Stylelint" || echo "No changes to commit"
-
-      - name: Push changes
-        run: git push
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- --user "weee-open-bot <weee-open-bot@users.noreply.github.com>" --message "Deploy commit ${GITHUB_SHA}"
+        env:
+          CI: false  # this overrides the "treat warnings as errors" behavior
+          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_BOT_PAT }}
