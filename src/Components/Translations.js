@@ -6,7 +6,7 @@ const translations = {
 		"persian",
 	],
 	"en": {
-		"footer" : "is a cured selection of useful resources for students made by",
+		"footer" : "is a curated selection of useful resources for students made by",
 		"inginfbot": {
 			"subtitle": "A Telegram bot to find other PoliTo Computer Engineers",
 			"description": "Using this bot you can easily find people from courses you're enrolled in, discuss exams " +
