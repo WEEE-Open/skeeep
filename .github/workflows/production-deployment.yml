@@ -44,6 +44,6 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npm run build:production
         env:
           CI: false  # this overrides the "treat warnings as errors" behavior
