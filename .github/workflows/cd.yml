@@ -3,8 +3,7 @@ name: CD
 on:
   push:
     branches:
-      - master
-      - main
+      - $default-branch
     paths-ignore:
       - README*
       - LICENSE
