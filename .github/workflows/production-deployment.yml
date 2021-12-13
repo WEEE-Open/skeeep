@@ -52,6 +52,7 @@ jobs:
 
       - name: Finish build setup
         run: |
+          rm -rf "$WEBDIR".bak
           mv "$WEBDIR" "$WEBDIR".bak
           mv build/ "$WEBDIR"
           chown -R root:www-data "$WEBDIR"
