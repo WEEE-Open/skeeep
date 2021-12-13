@@ -47,3 +47,13 @@ jobs:
         run: npm run build:production
         env:
           CI: false  # this overrides the "treat warnings as errors" behavior
+          PUBLIC_URL: ${{ secrets.PRODUCTION_DOMAIN_OR_IP }}  # overrides .env.production
+
+      - name: Finish build setup
+        run: |
+          mv "$WEBDIR" "$WEBDIR".bak
+          mv build/ "$WEBDIR"
+          chown -R root:www-data "$WEBDIR"
+          chmod -R 755 "$WEBDIR"
+        env:
+          WEBDIR: /var/www/html
