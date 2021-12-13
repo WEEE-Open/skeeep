@@ -15,7 +15,7 @@ jobs:
         id: wait-for-cd
         with:
           token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
-          checkName: CD
+          checkName: Run CD
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
       - name: Exit if CD fails
