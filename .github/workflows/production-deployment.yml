@@ -44,10 +44,11 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build:production
+        run: |
+          echo "PUBLIC_URL=\"${{ secrets.PRODUCTION_DOMAIN_OR_IP }}\"" > .env.production
+          npm run build:production
         env:
           CI: false  # this overrides the "treat warnings as errors" behavior
-          PUBLIC_URL: ${{ secrets.PRODUCTION_DOMAIN_OR_IP }}  # overrides .env.production
 
       - name: Finish build setup
         run: |
