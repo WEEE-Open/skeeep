@@ -1,4 +1,4 @@
-# skeeep
+<img src="public/skeeep.svg" alt="skeeep" height="100">
 
 [![CI](https://github.com/WEEE-Open/skeeep/actions/workflows/ci.yml/badge.svg)](https://github.com/WEEE-Open/skeeep/actions/workflows/ci.yml)
 [![CD](https://github.com/WEEE-Open/skeeep/actions/workflows/cd.yml/badge.svg)](https://github.com/WEEE-Open/skeeep/actions/workflows/cd.yml)
