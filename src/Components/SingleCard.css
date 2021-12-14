@@ -67,10 +67,23 @@
   line-height: 20px;
 }
 
+@media screen and (max-width: 310px) {
+  .card .title {
+    font-size: 18px;
+  }
+
+  .card .icon {
+    margin: 0 auto;
+    padding: 0;
+    width: 165px;
+    height: 165px;
+  }
+
+}
 
 @media screen and (max-width: 280px) {
   .card .title {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .card .icon {
@@ -93,7 +106,7 @@
 
 }
 
-@media screen and (max-width: 230px) {
+@media screen and (max-width: 240px) {
 
   .card .icon {
     margin: 0 auto;
@@ -103,6 +116,19 @@
   }
   .card .title {
     font-size: 15px;
+  }
+
+}
+@media screen and (max-width: 230px) {
+
+  .card .icon {
+    margin: 0 auto;
+    padding: 0;
+    width: 125px;
+    height: 125px;
+  }
+  .card .title {
+    font-size: 13px;
   }
 
 }
