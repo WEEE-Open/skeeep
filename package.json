@@ -23,6 +23,8 @@
     "build:production": "env-cmd -f .env.production react-scripts build",
     "predeploy": "npm run build:staging",
     "deploy": "gh-pages -d build",
+    "format": "prettier --write .",
+    "lint": "eslint --ext .js --fix .",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -46,6 +48,7 @@
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
+    "prettier": "^2.5.1",
     "stylelint": "^14.1.0",
     "stylelint-config-standard": "^24.0.0"
   }
