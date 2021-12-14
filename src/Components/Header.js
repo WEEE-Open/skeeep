@@ -2,11 +2,11 @@ import React from "react";
 import LogoSvg from "./LogoSvg";
 
 function Header(props) {
-	return (
-		<>
-			<LogoSvg/>
-		</>
-	);
+  return (
+    <>
+      <LogoSvg />
+    </>
+  );
 }
 
 export default Header;

@@ -1,7 +1,7 @@
 name: Production Deployment
 
 on:
-  workflow_dispatch:  # run manually
+  workflow_dispatch: # run manually
 
 jobs:
   deploy:
@@ -48,7 +48,7 @@ jobs:
           echo "PUBLIC_URL=\"${{ secrets.PRODUCTION_DOMAIN_OR_IP }}\"" > .env.production
           npm run build:production
         env:
-          CI: false  # this overrides the "treat warnings as errors" behavior
+          CI: false # this overrides the "treat warnings as errors" behavior
 
       - name: Finish build setup
         run: |
