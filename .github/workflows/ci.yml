@@ -42,15 +42,12 @@ jobs:
         run: npm run eslint
         continue-on-error: true
 
-      - name: Commit ESLint changes
-        run: git commit -am "Fix code style issues with ESLint" || echo "No changes to commit"
-
       - name: Run Prettier
         run: npm run prettier
         continue-on-error: true
 
-      - name: Commit Prettier changes
-        run: git commit -am "Fix code style issues with Prettier" || echo "No changes to commit"
+      - name: Commit ESLint + Prettier changes
+        run: git commit -am "Fix code style issues with ESLint and Prettier" || echo "No changes to commit"
 
       - name: Run Stylelint
         run: npm run stylelint
