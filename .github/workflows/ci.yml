@@ -49,12 +49,5 @@ jobs:
       - name: Commit ESLint + Prettier changes
         run: git commit -am "Fix code style issues with ESLint and Prettier" || echo "No changes to commit"
 
-      - name: Run Stylelint
-        run: npm run stylelint
-        continue-on-error: true
-
-      - name: Commit Stylelint changes
-        run: git commit -am "Fix code style issues with Stylelint" || echo "No changes to commit"
-
       - name: Push changes
         run: git push
