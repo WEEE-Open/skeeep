@@ -1,12 +1,12 @@
-import Button from "react-bootstrap/Button";
-
+import React from "react";
+import LogoSvg from "./LogoSvg";
 
 function Header(props) {
-	return (
-		<div className="header">
-			<img id ='skeeep-logo' alt={"skeeep-logo"} src={"skeeep.svg"}/>
-		</div>
-	);
+  return (
+    <>
+      <LogoSvg />
+    </>
+  );
 }
 
 export default Header;

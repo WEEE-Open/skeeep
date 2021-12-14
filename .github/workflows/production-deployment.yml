@@ -1,0 +1,61 @@
+name: Production Deployment
+
+on:
+  workflow_dispatch: # run manually
+
+jobs:
+  deploy:
+    name: Deploy default branch to production
+    runs-on: self-hosted
+    if: ${{ github.event.pusher.name != 'weee-open-bot' }}
+
+    steps:
+      - name: Wait for CD to succeed
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-cd
+        with:
+          token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
+          checkName: Run CD
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Exit if CD fails
+        if: steps.wait-for-cd.outputs.conclusion == 'failure'
+        run: exit 1
+
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_ACTIONS_BOT_PAT }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install Node.js dependencies
+        run: npm install
+
+      - name: Build
+        run: |
+          echo "PUBLIC_URL=\"${{ secrets.PRODUCTION_DOMAIN_OR_IP }}\"" > .env.production
+          npm run build:production
+        env:
+          CI: false # this overrides the "treat warnings as errors" behavior
+
+      - name: Finish build setup
+        run: |
+          rm -rf "$WEBDIR".bak
+          mv "$WEBDIR" "$WEBDIR".bak
+          mv build/ "$WEBDIR"
+          chown -R root:www-data "$WEBDIR"
+          chmod -R 755 "$WEBDIR"
+        env:
+          WEBDIR: /var/www/html

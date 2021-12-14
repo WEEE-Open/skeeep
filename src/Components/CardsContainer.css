@@ -3,9 +3,14 @@
   padding: 0px;
 }
 
-.bootstrap-dark .card {
-  background-color: #3c3d3b;
+.bootstrap .card {
+  background-color: rgb(255 255 255 / 60%);
 }
-.cardsContainer a:hover{
+
+.bootstrap-dark .card {
+  background-color: rgb(60 61 59 / 60%);
+}
+
+.cardsContainer a:hover {
   text-decoration: none;
 }

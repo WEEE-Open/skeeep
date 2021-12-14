@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Quicksand:wght@400;700&display=swap");
+
 @font-face {
-  font-family:Vazir ;
-  src:url("./fonts/Vazir/Vazir-Regular.ttf");
+  font-family: Vazir;
+  src: url("./fonts/Vazir/Vazir-Regular.ttf");
 }
 
-.App { text-align: center; }
+.App {
+  text-align: center;
+}
 
 body {
   min-height: 100vh;
@@ -21,23 +24,40 @@ body {
 }
 
 @keyframes Gradient {
-  0% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
 
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes Gradient {
-
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes Gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* !!!! background: linear-gradient(120deg, #7dc1f9, #b1aef9, #ff82a0, #FBAD5F) !!!! */
