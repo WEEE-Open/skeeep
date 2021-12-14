@@ -27,7 +27,8 @@
     "prettier": "prettier --write .",
     "stylelint": "stylelint --fix '**/*.css'",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -49,8 +50,10 @@
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
+    "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
     "stylelint": "^14.1.0",
-    "stylelint-config-standard": "^24.0.0"
+    "stylelint-config-standard": "^24.0.0",
+    "husky": "^7.0.0"
   }
 }
