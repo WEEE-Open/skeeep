@@ -64,16 +64,14 @@ body {
 
 /* original: linear-gradient( #7dc1f9, #b1aef9, #e795d9, #ff82a0, #fb845f) */
 
-
-.header{
+.header {
   padding: 50px 0px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 310px) {
-  .header img{
+  .header img {
     width: 90%;
     height: auto;
   }
-
 }
