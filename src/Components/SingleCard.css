@@ -3,7 +3,8 @@
   border-radius: 25px !important;
   margin: 15px 0;
   padding: 25px 5px;
-  height: 600px;
+  height: 95%;
+  
 }
 
 .card .title {
@@ -56,10 +57,77 @@
   color: #dcdde1;
 }
 
-.persian .subtitle {
+.fa .subtitle{
   font-family: Vazir;
 }
-
-.persian .text {
+.fa .text{
   font-family: Vazir;
+  direction: rtl;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 310px) {
+  .card .title {
+    font-size: 18px;
+  }
+
+  .card .icon {
+    margin: 0 auto;
+    padding: 0;
+    width: 165px;
+    height: 165px;
+  }
+
+}
+
+@media screen and (max-width: 280px) {
+  .card .title {
+    font-size: 18px;
+  }
+
+  .card .icon {
+    margin: 0 auto;
+    padding: 0;
+    width: 165px;
+    height: 165px;
+  }
+
+}
+
+@media screen and (max-width: 250px) {
+
+  .card .icon {
+    margin: 0 auto;
+    padding: 0;
+    width: 145px;
+    height: 145px;
+  }
+
+}
+
+@media screen and (max-width: 240px) {
+
+  .card .icon {
+    margin: 0 auto;
+    padding: 0;
+    width: 125px;
+    height: 125px;
+  }
+  .card .title {
+    font-size: 15px;
+  }
+
+}
+@media screen and (max-width: 230px) {
+
+  .card .icon {
+    margin: 0 auto;
+    padding: 0;
+    width: 125px;
+    height: 125px;
+  }
+  .card .title {
+    font-size: 13px;
+  }
+
 }

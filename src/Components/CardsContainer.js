@@ -37,25 +37,25 @@ function CardsContainer(props) {
     },
   ]);
 
-  return (
-    <Container className="cardsContainer">
-      <Row>
-        {cards.map((c, index) => {
-          return (
-            <Col lg={4} md={6} sm={6} xs={12} key={index}>
-              <SingleCard
-                name={c.name}
-                title={c.title}
-                url={c.url}
-                lang={props.lang}
-                dark={props.dark}
-              />
-            </Col>
-          );
-        })}
-      </Row>
-    </Container>
-  );
+	return (
+		<Container className="cardsContainer" >
+			<Row>
+				{cards.map((c, index) => {
+					return (
+						<Col  lg={4} md={6} sm={6} xs={12} key={index}>
+							<SingleCard 
+								name={c.name} 
+								title={c.title} 
+								url={c.url}
+								lang={props.lang}
+								dark={props.dark}
+							/>
+						</Col>
+					);
+				})}
+			</Row>
+		</Container>
+	);
 }
 
 export default CardsContainer;
