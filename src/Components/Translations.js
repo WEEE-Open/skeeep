@@ -1,7 +1,11 @@
 const translations = {
   availableLanguages: ["en", "zh", "it", "fa"],
   en: {
-    footer: "is a curated selection of useful resources for students made by",
+    footer: {
+      firstLine:
+        "is a curated selection of useful resources for students made by",
+      secondLine: "Find out more about project",
+    },
     inginfbot: {
       subtitle: "A Telegram bot to find other PoliTo Computer Engineers",
       description:
@@ -40,8 +44,11 @@ const translations = {
     },
   },
   it: {
-    footer:
-      "è una curata selezione di risorse utili agli studenti realizzata da",
+    footer: {
+      firstLine:
+        "è una curata selezione di risorse utili agli studenti realizzata da",
+      secondLine: "Scopri di più sul progetto",
+    },
     inginfbot: {
       subtitle:
         "Un bot Telegram per trovare altri Ingegneri Informatici del PoliTo",
@@ -83,7 +90,10 @@ const translations = {
     },
   },
   fa: {
-    footer: "محل قرار گیری فوتر",
+    footer: {
+      firstLine: "محل قرار گیری فوتر",
+      secondLine: "TODO",
+    },
     inginfbot: {
       subtitle: "ربات تلگرامی برای پیدا کردن مهندسین کامپیوتر پلیتو",
       description:
@@ -120,7 +130,10 @@ const translations = {
     },
   },
   zh: {
-    footer: "", // TODO: translate
+    footer: {
+      firstLine: "",
+      secondLine: "",
+    },
     inginfbot: {
       subtitle: "Telegram 机器人，帮你找到其他的电脑工程师",
       description:

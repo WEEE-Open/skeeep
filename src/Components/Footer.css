@@ -2,6 +2,10 @@
   padding-top: 30px;
 }
 
+.footer .second-line {
+  margin-top: -30px;
+}
+
 .footer #skeeep-logo {
   height: 35px;
   vertical-align: -8pt;
@@ -12,4 +16,10 @@
   height: 20px;
   vertical-align: -5pt;
   padding-left: 3pt;
+}
+
+.footer #skeeell-logo {
+  height: 90px;
+  vertical-align: -26.5pt;
+  margin-left: -8pt;
 }
