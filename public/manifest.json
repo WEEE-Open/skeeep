@@ -1,25 +1,25 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "skeeep",
+  "name": "skeeep - jump to the best PoliTo student-made software!",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "favicon/favicon-310.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "310x310"
     },
     {
-      "src": "logo512.png",
+      "src": "favicon/favicon-192.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#00983a",
+  "background_color": "#272727"
 }
