@@ -39,8 +39,10 @@ const translations = {
         "will give you an estimate of time required to study them in terms of days.",
     },
     skeeelled: {
-      subtitle: "Coming soon...",
-      description: "",
+      subtitle: "An e-learning platform for the modern age",
+      description:
+        "Discuss exercises, give advice to students, and test your skills with official exam simulations. " +
+        "For students and professors.",
     },
   },
   it: {
@@ -54,7 +56,7 @@ const translations = {
         "Un bot Telegram per trovare altri Ingegneri Informatici del PoliTo",
       description:
         "Usando questo bot puoi trovare facilmente altri studenti dei corsi che segui, discutere " +
-        "di esami e dei vostri interessi comuni. Tutto organizzato in gruppi moderati.",
+        "di esami e degli interessi comuni. Tutto organizzato in gruppi moderati.",
     },
     politools: {
       subtitle:
@@ -85,8 +87,10 @@ const translations = {
         "Planner ti darà una stima di quanti giorni dovrai studiare per quell'esame.",
     },
     skeeelled: {
-      subtitle: "Coming soon...",
-      description: "",
+      subtitle: "Una piattaforma di e-learning per l'era moderna",
+      description:
+        "Discuti di esercizi, dài consigli agli studenti e metti alla prova le tua abilità con simulazioni" +
+        " d'esame ufficiali. Per studenti e professori.",
     },
   },
   fa: {
@@ -125,14 +129,14 @@ const translations = {
         "برای شما زمان مورد نیاز برای مطالعه آنها را تخمین میزند.",
     },
     skeeelled: {
-      subtitle: "Coming soon...",
-      description: "",
+      subtitle: "TODO",
+      description: "TODO",
     },
   },
   zh: {
     footer: {
-      firstLine: "",
-      secondLine: "",
+      firstLine: "TODO",
+      secondLine: "TODO",
     },
     inginfbot: {
       subtitle: "Telegram 机器人，帮你找到其他的电脑工程师",
@@ -159,8 +163,8 @@ const translations = {
         "将这个跨平台的开源桌上软体，下载到你 Windows/Linux/macOS 的系统中。输入需要研读的幻灯片及影片。学习规划者，将会提供你估计的读书时间。",
     },
     skeeelled: {
-      subtitle: "Coming soon...",
-      description: "",
+      subtitle: "TODO",
+      description: "TODO",
     },
   },
 };
