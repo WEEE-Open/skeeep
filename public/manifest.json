@@ -1,25 +1,15 @@
 {
   "short_name": "skeeep",
-  "name": "skeeep - jump to the best PoliTo student-made software!",
+  "name": "skeeep - jump to the best PoliTo software for students!",
   "icons": [
     {
       "src": "favicon/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
-    },
-    {
-      "src": "favicon/favicon-310.png",
-      "type": "image/png",
-      "sizes": "310x310"
-    },
-    {
-      "src": "favicon/favicon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#00983a",
-  "background_color": "#272727"
+  "background_color": "#3c3d3b"
 }
