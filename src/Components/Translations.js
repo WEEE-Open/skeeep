@@ -135,36 +135,38 @@ const translations = {
   },
   zh: {
     footer: {
-      firstLine: "TODO",
-      secondLine: "TODO",
+      firstLine: "是一个经学生策划的资源选集，制作开发于",
+      secondLine: "了解更多关于",
     },
     inginfbot: {
       subtitle: "Telegram 机器人，帮你找到其他的电脑工程师",
       description:
-        "利用这台机器人，你能轻易地找到跟你同学科的夥伴，互相讨论考试科目及兴趣。规划整理所有的群组。",
+        "利用这台机器人，你能轻易地找到跟你同学科的夥伴，互相讨论考试科目及兴趣。所有群组皆规划于管理组别中。",
     },
     politools: {
-      subtitle: "PoliTo 网站的浏览器伸展",
+      subtitle: "PoliTo 网站的浏览器扩充",
       description:
-        "由学生团队开发的免费软体，替都理的教学平台增加功能，改善你的学生生活。",
+        "由学生团队开发的免费软件，替都理的教学平台增加功能，帮你改善你的学生生活。",
     },
     politogruppibot: {
       subtitle: "Telegram 机器人，帮你找到其他的都理同学",
       description:
-        "找到与你同学科或兴趣相关的同学。只要你是都理的学生，我们欢迎你在这，创造或搜寻属于你的学生群组",
+        "找到与你同学科或兴趣相关的同学。只要你是都理的学生，我们欢迎你在这平台上，创造或搜寻属于你的学生群组",
     },
     sonousciteledate: {
       subtitle: "大考日期出来了吗?",
-      description: "这个单页网站，会告诉你考试的时间跟日期。内容时常更新。",
+      description:
+        "这个单页网站，会告诉你考试的时间或预计的考試日期。内容时常更新。",
     },
     studyplanner: {
-      subtitle: "跨平台的桌面程序，帮你估算每堂考试的准备时间",
+      subtitle: "跨平台的桌面软件，帮你估算每堂考试的准备时间",
       description:
-        "将这个跨平台的开源桌上软体，下载到你 Windows/Linux/macOS 的系统中。输入需要研读的幻灯片及影片。学习规划者，将会提供你估计的读书时间。",
+        "将这个跨平台的开源桌面软件，下载到你 Windows/Linux/macOS 的系统中。输入需要研读的幻灯片及影片。学习规划者，将会帮你估计所需的读书时间。",
     },
     skeeelled: {
-      subtitle: "TODO",
-      description: "TODO",
+      subtitle: "一个现代的线上学习平台",
+      description:
+        " 让学生及教授们，讨论作业、学生指南，以及官方考模拟试题演练。 ",
     },
   },
 };
