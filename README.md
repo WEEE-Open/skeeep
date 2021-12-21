@@ -5,6 +5,8 @@
 
 A scrollable landing page that allows all PoliTo students to quickly find useful references to impactful quality of life software.
 
+<img src="public/og-imgs/preview-screenshot-2526px.png" alt="preview screenshot" height="400" />
+
 ### How to develop
 
 0. Install [Node.js](https://nodejs.org/en/) (we're using v16)
