@@ -1,5 +1,5 @@
 const translations = {
-  availableLanguages: ["en", "zh", "it", "persian"],
+  availableLanguages: ["en", "zh", "it", "fa"],
   en: {
     footer: "is a curated selection of useful resources for students made by",
     inginfbot: {
@@ -82,7 +82,7 @@ const translations = {
       description: "",
     },
   },
-  persian: {
+  fa: {
     footer: "مجموعه ای از منابع مفید برای دانشجویان، ساخته شده توسط ", // TODO: translate
     inginfbot: {
       subtitle: "ربات تلگرامی برای پیدا کردن بقیه مهندسین کامپیوتر پلیتو",
