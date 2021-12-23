@@ -83,7 +83,7 @@ const translations = {
     },
   },
   persian: {
-    footer: "", // TODO: translate
+    footer: "مجموعه ای از منابع مفید برای دانشجویان، ساخته شده توسط ", // TODO: translate
     inginfbot: {
       subtitle: "ربات تلگرامی برای پیدا کردن بقیه مهندسین کامپیوتر پلیتو",
       description:
@@ -115,7 +115,7 @@ const translations = {
         "برای شما زمان مورد نیاز برای مطالعه آنها را تخمین میزند.",
     },
     skeeelled: {
-      subtitle: "Coming soon...",
+      subtitle: "به زودی...",
       description: "",
     },
   },
