@@ -1,7 +1,11 @@
 const translations = {
   availableLanguages: ["en", "zh", "it", "fa"],
   en: {
-    footer: "is a curated selection of useful resources for students made by",
+    footer: {
+      firstLine:
+        "is a curated selection of useful resources for students made by",
+      secondLine: "Find out more about project",
+    },
     inginfbot: {
       subtitle: "A Telegram bot to find other PoliTo Computer Engineers",
       description:
@@ -35,19 +39,24 @@ const translations = {
         "will give you an estimate of time required to study them in terms of days.",
     },
     skeeelled: {
-      subtitle: "Coming soon...",
-      description: "",
+      subtitle: "An e-learning platform for the modern age",
+      description:
+        "Discuss exercises, give advice to students, and test your skills with official exam simulations. " +
+        "For students and professors.",
     },
   },
   it: {
-    footer:
-      "è una curata selezione di risorse utili agli studenti realizzata da",
+    footer: {
+      firstLine:
+        "è una curata selezione di risorse utili agli studenti realizzata da",
+      secondLine: "Scopri di più sul progetto",
+    },
     inginfbot: {
       subtitle:
         "Un bot Telegram per trovare altri Ingegneri Informatici del PoliTo",
       description:
         "Usando questo bot puoi trovare facilmente altri studenti dei corsi che segui, discutere " +
-        "di esami e dei vostri interessi comuni. Tutto organizzato in gruppi moderati.",
+        "di esami e degli interessi comuni. Tutto organizzato in gruppi moderati.",
     },
     politools: {
       subtitle:
@@ -78,37 +87,39 @@ const translations = {
         "Planner ti darà una stima di quanti giorni dovrai studiare per quell'esame.",
     },
     skeeelled: {
-      subtitle: "Coming soon...",
-      description: "",
+      subtitle: "Una piattaforma di e-learning per l'era moderna",
+      description:
+        "Discuti di esercizi, dài consigli agli studenti e metti alla prova le tua abilità con simulazioni" +
+        " d'esame ufficiali. Per studenti e professori.",
     },
   },
   fa: {
     footer: "مجموعه ای از منابع مفید برای دانشجویان، ساخته شده توسط ", // TODO: translate
     inginfbot: {
-      subtitle: "ربات تلگرامی برای پیدا کردن بقیه مهندسین کامپیوتر پلیتو",
+      subtitle: "ربات تلگرامی برای پیدا کردن مهندسین کامپیوتر پلیتو",
       description:
-        ".با استفاده از این ربات شما میتوانید به راحنی همکلاسی های خود را در گروه های منظم پیدا کنید و به بحث و اظهار نظر درباره موضوعات مختلف بپردازید",
+        "با استفاده از این ربات شما میتوانید به راحنی همکلاسی های خود را در گروه های دسته بندی شده پیدا کنید و به بحث و اظهار نظر درباره موضوعات مختلف بپردازید",
     },
     politools: {
       subtitle: "یک افزونه مرورگر برای پرتال دانشجویی پلیتو",
       description:
-        "افزودن کاربردهای مختلف به پرتال دانشجویی پلیتو که کاربری روزانه شما را بهبود میبخشد. کاملا رایگان و توسعه داده شده توسط دانشجویان.",
+        "افزودن کاربردهای مختلف به پرتال دانشجویی پلیتو که کاربری روزانه شما را بهبود میبخشد. کاملا رایگان و توسعه داده شده توسط دانشجویان",
     },
     politogruppibot: {
-      subtitle: "ربات تلگرامی برای پیدا کردن بقیه مهندسین پلیتو",
+      subtitle: "ربات تلگرامی برای پیدا کردن مهندسین پلیتو",
       description:
-        "افرادی را که در دوره های مشابه شما شرکت میکنند و یا دارای علایق مشترک با هم هستید را بیابید. گروه دلخواه خود را بسازید " +
-        "یا به گروه های پیش ساخته بپیوندید. برای تمامی دانشجویان پلیتو.",
+        "افرادی را که در دوره های مشابه به شما شرکت میکنند و یا دارای علایق مشترک با هم هستید را بیابید. میتوانید گروه دلخواه خود را بسازید " +
+        "یا به گروه های از پیش ساخته بپیوندید. برای تمامی دانشجویان پلیتو.",
     },
     sonousciteledate: {
-      subtitle: "تاریخ امتحانات مشخص شده؟",
+      subtitle: "آیا تاریخ امتحانات مشخص شده؟",
       description:
         "یک وبسایت برای اطلاع رسانی تاریخ ثبت نام برای امتحانات" +
         "که به طور متناوب بروز رسانی میشود.",
     },
     studyplanner: {
       subtitle:
-        "یک اپلیکیشن دستکتاپ چند پلتفرمی که زمان مورد نیاز برای مطالعه یک درس را تخمین میزند",
+        "یک اپلیکیشن دستکتاپ چند پلتفرمی، برای تخمین زمان مورد نیاز برای مطالعه یک درس",
       description:
         "این اپلیکیشن رایگان اپن سورس را برای سیستم ویندوز/مک/لینوکس خود دانلود کنید, " +
         "اسلاید هایی را که باید مطالعه کنید و یا ویدیوهایی را که باید مشاهده کنید را انتخاب کنید و این اپلیکیشن " +
@@ -120,34 +131,39 @@ const translations = {
     },
   },
   zh: {
-    footer: "", // TODO: translate
+    footer: {
+      firstLine: "是一个经学生策划的资源选集，制作开发于",
+      secondLine: "了解更多关于",
+    },
     inginfbot: {
       subtitle: "Telegram 机器人，帮你找到其他的电脑工程师",
       description:
-        "利用这台机器人，你能轻易地找到跟你同学科的夥伴，互相讨论考试科目及兴趣。规划整理所有的群组。",
+        "利用这台机器人，你能轻易地找到跟你同学科的夥伴，互相讨论考试科目及兴趣。所有群组皆规划于管理组别中。",
     },
     politools: {
-      subtitle: "PoliTo 网站的浏览器伸展",
+      subtitle: "PoliTo 网站的浏览器扩充",
       description:
-        "由学生团队开发的免费软体，替都理的教学平台增加功能，改善你的学生生活。",
+        "由学生团队开发的免费软件，替都理的教学平台增加功能，帮你改善你的学生生活。",
     },
     politogruppibot: {
       subtitle: "Telegram 机器人，帮你找到其他的都理同学",
       description:
-        "找到与你同学科或兴趣相关的同学。只要你是都理的学生，我们欢迎你在这，创造或搜寻属于你的学生群组",
+        "找到与你同学科或兴趣相关的同学。只要你是都理的学生，我们欢迎你在这平台上，创造或搜寻属于你的学生群组",
     },
     sonousciteledate: {
       subtitle: "大考日期出来了吗?",
-      description: "这个单页网站，会告诉你考试的时间跟日期。内容时常更新。",
+      description:
+        "这个单页网站，会告诉你考试的时间或预计的考試日期。内容时常更新。",
     },
     studyplanner: {
-      subtitle: "跨平台的桌面程序，帮你估算每堂考试的准备时间",
+      subtitle: "跨平台的桌面软件，帮你估算每堂考试的准备时间",
       description:
-        "将这个跨平台的开源桌上软体，下载到你 Windows/Linux/macOS 的系统中。输入需要研读的幻灯片及影片。学习规划者，将会提供你估计的读书时间。",
+        "将这个跨平台的开源桌面软件，下载到你 Windows/Linux/macOS 的系统中。输入需要研读的幻灯片及影片。学习规划者，将会帮你估计所需的读书时间。",
     },
     skeeelled: {
-      subtitle: "Coming soon...",
-      description: "",
+      subtitle: "一个现代的线上学习平台",
+      description:
+        " 让学生及教授们，讨论作业、学生指南，以及官方考模拟试题演练。 ",
     },
   },
 };

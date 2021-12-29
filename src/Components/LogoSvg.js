@@ -4,34 +4,37 @@ import { motion } from "framer-motion/dist/framer-motion";
 //library: FramerMotion
 const LogoSvg = () => {
   const letterS = {
-    visible: { opacity: 1, y: 0, transition: { delay: 0.3 } },
-    hidden: { opacity: 1, y: 10 },
+    visible: { opacity: 1, transition: { delay: 0.3 } },
+    hidden: { opacity: 1 },
   };
+
   const letterK = {
-    visible: { opacity: 1, y: 0, transition: { delay: 0.3 } },
-    hidden: { opacity: 1, y: -10 },
+    visible: { opacity: 1, transition: { delay: 0.3 } },
+    hidden: { opacity: 1 },
   };
+
   const letterP = {
-    visible: { opacity: 1, x: 0, transition: { delay: 1 } },
-    hidden: { opacity: 1, x: -112, staggerchildren: 0.5 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.22, delay: 0.5 } },
+    hidden: { opacity: 1, x: -112 },
   };
+
   const eeeEs = {
-    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-    hidden: { opacity: 0, x: -30, staggerchildren: 0.5 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, x: -30 },
   };
 
   const lightgreen = {
-    visible: { opacity: 1, x: 0, transition: { duration: 0.15, delay: 1.1 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.24, delay: 0.7 } },
     hidden: { opacity: 0, x: -50 },
   };
 
   const mildgreen = {
-    visible: { opacity: 1, x: 0, transition: { duration: 0.13, delay: 1.05 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.19, delay: 0.65 } },
     hidden: { opacity: 0, x: -51 },
   };
 
   const darkgreen = {
-    visible: { opacity: 1, x: 0, transition: { duration: 0.11, delay: 1.0 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.08, delay: 0.6 } },
     hidden: { opacity: 0, x: -52 },
   };
 
