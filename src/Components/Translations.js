@@ -94,7 +94,10 @@ const translations = {
     },
   },
   fa: {
-    footer: "مجموعه ای از منابع مفید برای دانشجویان، ساخته شده توسط ", // TODO: translate
+    footer: {
+      firstLine: "مجموعه ای از منابع مفید برای دانشجویان، ساخته شده توسط ",
+      secondLine: "برای اطلاعات بیشتر کلیک کنید",
+    }, // TODO: translate
     inginfbot: {
       subtitle: "ربات تلگرامی برای پیدا کردن مهندسین کامپیوتر پلیتو",
       description:
