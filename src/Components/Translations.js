@@ -12,6 +12,12 @@ const translations = {
         "Using this bot you can easily find people from courses you're enrolled in, discuss exams " +
         "and your common interests. All organized in managed groups.",
     },
+    politomateriale: {
+      subtitle:
+        "A Python CLI to download study material from PoliTo's teaching portal",
+      description:
+        "For the nerds among us, a cross-platform command line utility to download all your courses' slides from the teaching portal in a few quick steps at the terminal",
+    },
     politools: {
       subtitle: "A browser extension for PoliTo's portal page",
       description:
@@ -57,6 +63,12 @@ const translations = {
       description:
         "Usando questo bot puoi trovare facilmente altri studenti dei corsi che segui, discutere " +
         "di esami e degli interessi comuni. Tutto organizzato in gruppi moderati.",
+    },
+    politomateriale: {
+      subtitle:
+        "Una CLI in Python per scaricare il materiale dal portale per la didattica del PoliTo",
+      description:
+        "Per i nerd tra noi, una utility da riga di comando cross-platform per scaricare tutte le slide dei propri corsi in pochi step al terminale",
     },
     politools: {
       subtitle:
@@ -130,7 +142,8 @@ const translations = {
     },
     skeeelled: {
       subtitle: "یک پلتفرم آموزش آنلاین برای دوران مدرن",
-      description: "به حل تمارین بپردازید، به دانشجویان دیگر کمک کنید، و مهارت خود را با آزمون های شبیه ساز رسمی بسنجید.برای اساتید و دانشجویان"
+      description:
+        "به حل تمارین بپردازید، به دانشجویان دیگر کمک کنید، و مهارت خود را با آزمون های شبیه ساز رسمی بسنجید.برای اساتید و دانشجویان",
     },
   },
   zh: {
