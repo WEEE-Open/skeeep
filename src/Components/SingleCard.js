@@ -25,10 +25,14 @@ function SingleCard(props) {
               <img src={imageSrc} alt={props.name} />
             </div>
             <Card.Title className="subtitle">
-              {translations[props.lang][props.name].subtitle}
+              {props.name in translations[props.lang]
+                ? translations[props.lang][props.name].subtitle
+                : translations.en[props.name].subtitle}
             </Card.Title>
             <Card.Text className="text">
-              {translations[props.lang][props.name].description}
+              {props.name in translations[props.lang]
+                ? translations[props.lang][props.name].description
+                : translations.en[props.name].description}
             </Card.Text>
           </Card.Body>
         </Card>
