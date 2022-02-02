@@ -23,8 +23,8 @@
     "build:production": "env-cmd -f .env.production react-scripts build",
     "predeploy": "npm run build:staging",
     "deploy": "gh-pages -d build",
-    "eslint": "eslint --ext .js --no-color --fix ",
-    "prettier": "prettier --write ",
+    "eslint": "eslint --ext .js --no-color --fix .",
+    "prettier": "prettier --write .",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install"
