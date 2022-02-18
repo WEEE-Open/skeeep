@@ -1,12 +1,17 @@
-name: Production Deployment
+name: Production Build # Non-Continuous Deployment into Production - needs manual server-side git pull
 
 on:
-  workflow_dispatch: # run manually
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - README*
+      - LICENSE
 
 jobs:
   deploy:
     name: Deploy default branch to production
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     if: ${{ github.event.pusher.name != 'weee-open-bot' }}
 
     steps:
@@ -21,6 +26,11 @@ jobs:
       - name: Exit if CD fails
         if: steps.wait-for-cd.outputs.conclusion == 'failure'
         run: exit 1
+
+      - name: Set up git credentials
+        run: |
+          git config --global user.email "weee-open-bot@users.noreply.github.com"
+          git config --global user.name "weee-open-bot"
 
       - name: Check out Git repository
         uses: actions/checkout@v2
@@ -44,18 +54,17 @@ jobs:
         run: npm install
 
       - name: Build
-        run: |
-          echo "PUBLIC_URL=\"${{ secrets.PRODUCTION_DOMAIN_OR_IP }}\"" > .env.production
-          npm run build:production
+        run: npm run build:production
         env:
           CI: false # this overrides the "treat warnings as errors" behavior
 
-      - name: Finish build setup
+      # add ignored files in build directory, move them up to parent directory, commit them
+      - name: Commit production build to "production" branch
         run: |
-          rm -rf "$WEBDIR".bak
-          mv "$WEBDIR" "$WEBDIR".bak
-          mv build/ "$WEBDIR"
-          chown -R root:www-data "$WEBDIR"
-          chmod -R 755 "$WEBDIR"
-        env:
-          WEBDIR: /var/www/html
+          git checkout production
+          git add --force build/*
+          git mv build/* .
+          git commit -m "Deploy commit ${GITHUB_SHA}"
+
+      - name: Push changes
+        run: git push
