@@ -63,6 +63,7 @@ jobs:
       - name: Commit production build to "production" branch
         run: |
           git checkout production
+          git rm -r --ignore-unmatch ./*
           git add --force build/*
           git mv build/* .
           git commit -m "Deploy commit ${GITHUB_SHA}"
