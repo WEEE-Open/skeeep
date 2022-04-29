@@ -4,13 +4,7 @@ import "./SingleCard.css";
 import translations from "./Translations";
 
 function SingleCard(props) {
-  //check if the dark icons should be loaded or not and change the name of icons
-  let imageSrc;
-  if (props.dark) {
-    imageSrc = `icons/${props.name}-dark.svg`;
-  } else {
-    imageSrc = `icons/${props.name}.svg`;
-  }
+  const imageSrc = `icons/${props.name}${props.dark && "-dark"}.svg`;
 
   // adding language name to the className of the card to have customized style for each language
   const addClass = `card ${props.lang} ${props.isNew && "new"}`;
