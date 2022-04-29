@@ -44,7 +44,7 @@ function CardsContainer(props) {
     {
       name: "skeeelled",
       title: "skeeelled",
-      url: "#",
+      url: "https://github.com/weee-open/skeeelled",
       addedDate: new Date("2022-03-11"),
     },
   ]);
