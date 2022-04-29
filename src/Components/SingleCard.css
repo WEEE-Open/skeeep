@@ -44,6 +44,11 @@
   text-align: center;
 }
 
+.card.new {
+  box-shadow: 0 7px 5px 0 rgb(251 173 95 / 40%),
+    10px 6px 10px 0 rgb(251 173 95 / 0%);
+}
+
 .bootstrap-dark .card .title {
   color: #f5f6fa;
 }

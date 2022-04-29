@@ -55,8 +55,10 @@ function CardsContainer(props) {
     let sortedCards = [];
     cards.forEach((card) => {
       if (new Date() - card.addedDate < gracePeriod * 24 * 60 * 60 * 1000) {
+        card.isNew = true;
         sortedCards.unshift(card); // add at the beginning
       } else {
+        card.isNew = false;
         sortedCards.push(card); // add at the end
       }
     });
@@ -73,6 +75,7 @@ function CardsContainer(props) {
                 name={c.name}
                 title={c.title}
                 url={c.url}
+                isNew={c.isNew}
                 lang={props.lang}
                 dark={props.dark}
               />

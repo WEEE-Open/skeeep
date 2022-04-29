@@ -12,8 +12,8 @@ function SingleCard(props) {
     imageSrc = `icons/${props.name}.svg`;
   }
 
-  //adding language name to the className of the card to have cusomized style for each language
-  const addClass = `card ${props.lang}`;
+  // adding language name to the className of the card to have customized style for each language
+  const addClass = `card ${props.lang} ${props.isNew && "new"}`;
 
   return (
     <>
