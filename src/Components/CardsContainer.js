@@ -8,7 +8,7 @@ function CardsContainer(props) {
     {
       name: "politools",
       title: "PoliTools",
-      url: "https://chrome.google.com/webstore/detail/politools/fbbjhoaakfhbggkegckmjafkffaofnkd?hl=it",
+      url: "https://chrome.google.com/webstore/detail/politools/fbbjhoaakfhbggkegckmjafkffaofnkd",
     },
     {
       name: "inginfbot",
