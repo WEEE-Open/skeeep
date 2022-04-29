@@ -7,11 +7,26 @@
 }
 
 .card .title {
-  font-size: 19pt;
+  font-size: 19pt; /*up until 576px - see below*/
   letter-spacing: -0.4px;
   font-weight: 900;
   font-family: "Nunito", sans-serif;
   color: #3c3d3b;
+}
+
+/*https://getbootstrap.com/docs/5.1/layout/breakpoints/#media-queries*/
+/*in the first 2-column view, the cards are smaller*/
+@media (min-width: 576px) {
+  .card .title {
+    font-size: 14pt;
+  }
+}
+
+/*in larger 2-column view and 3-column view we have more space for the title*/
+@media (min-width: 768px) {
+  .card .title {
+    font-size: 19pt;
+  }
 }
 
 .card .subtitle {
@@ -56,27 +71,4 @@
   font-family: Vazir;
   direction: rtl;
   line-height: 20px;
-}
-
-@media screen and (max-width: 310px) {
-  .card .title {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .card .title {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 240px) {
-  .card .title {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 230px) {
-  .card .title {
-    font-size: 13px;
-  }
 }
