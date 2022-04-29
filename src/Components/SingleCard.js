@@ -4,10 +4,10 @@ import "./SingleCard.css";
 import translations from "./Translations";
 
 function SingleCard(props) {
-  const imageSrc = `icons/${props.name}${props.dark && "-dark"}.svg`;
+  const imageSrc = `icons/${props.name}${props.dark ? "-dark" : ""}.svg`;
 
   // adding language name to the className of the card to have customized style for each language
-  const addClass = `card ${props.lang} ${props.isNew && "new"}`;
+  const addClass = `card ${props.lang} ${props.isNew ? "new" : ""}`;
 
   return (
     <>
