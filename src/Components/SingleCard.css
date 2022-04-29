@@ -23,18 +23,6 @@
   color: #797979;
 }
 
-.card .icon {
-  margin: 0 auto;
-  padding: 0;
-  width: 215px;
-  height: 215px;
-}
-
-.card .icon img {
-  margin: 0 auto;
-  padding: 0;
-}
-
 .card .text {
   font-family: "Quicksand", sans-serif;
   font-size: 15px;
@@ -74,55 +62,20 @@
   .card .title {
     font-size: 18px;
   }
-
-  .card .icon {
-    margin: 0 auto;
-    padding: 0;
-    width: 165px;
-    height: 165px;
-  }
 }
 
 @media screen and (max-width: 280px) {
   .card .title {
     font-size: 18px;
   }
-
-  .card .icon {
-    margin: 0 auto;
-    padding: 0;
-    width: 165px;
-    height: 165px;
-  }
-}
-
-@media screen and (max-width: 250px) {
-  .card .icon {
-    margin: 0 auto;
-    padding: 0;
-    width: 145px;
-    height: 145px;
-  }
 }
 
 @media screen and (max-width: 240px) {
-  .card .icon {
-    margin: 0 auto;
-    padding: 0;
-    width: 125px;
-    height: 125px;
-  }
   .card .title {
     font-size: 15px;
   }
 }
 @media screen and (max-width: 230px) {
-  .card .icon {
-    margin: 0 auto;
-    padding: 0;
-    width: 125px;
-    height: 125px;
-  }
   .card .title {
     font-size: 13px;
   }

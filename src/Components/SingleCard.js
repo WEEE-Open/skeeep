@@ -15,9 +15,7 @@ function SingleCard(props) {
         <Card className={addClass}>
           <Card.Body>
             <Card.Title className="title">{props.title}</Card.Title>
-            <div className="icon">
-              <img src={imageSrc} alt={props.name} />
-            </div>
+            <img src={imageSrc} alt={`${props.title} Logo`} />
             <Card.Title className="subtitle">
               {props.name in translations[props.lang]
                 ? translations[props.lang][props.name].subtitle
