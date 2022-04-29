@@ -28,7 +28,7 @@ function CardsContainer(props) {
     {
       name: "sonousciteledate",
       title: "sonousciteledate.it",
-      url: "https://grayneel.github.io/sonousciteledate.github.io/",
+      url: "https://sonousciteledate.it",
     },
     {
       name: "politomateriale",
