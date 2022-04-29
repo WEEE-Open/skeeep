@@ -47,6 +47,12 @@ function CardsContainer(props) {
       url: "https://github.com/weee-open/skeeelled",
       addedDate: new Date("2022-03-11"),
     },
+    {
+      name: "appuntipolito",
+      title: "Regalo/Cerco Appunti PoliTo",
+      url: "https://studyroompoli.altervista.org/notes",
+      addedDate: new Date("2022-03-11"), // TODO: change date
+    },
   ]);
 
   const gracePeriod = 30; // days that newly added cards will be on top
