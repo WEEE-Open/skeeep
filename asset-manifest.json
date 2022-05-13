@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://weeeopen.polito.it/skeeep/static/css/main.3ac80498.chunk.css",
-    "main.js": "https://weeeopen.polito.it/skeeep/static/js/main.ef33c739.chunk.js",
-    "main.js.map": "https://weeeopen.polito.it/skeeep/static/js/main.ef33c739.chunk.js.map",
+    "main.js": "https://weeeopen.polito.it/skeeep/static/js/main.c119502a.chunk.js",
+    "main.js.map": "https://weeeopen.polito.it/skeeep/static/js/main.c119502a.chunk.js.map",
     "runtime-main.js": "https://weeeopen.polito.it/skeeep/static/js/runtime-main.71502210.js",
     "runtime-main.js.map": "https://weeeopen.polito.it/skeeep/static/js/runtime-main.71502210.js.map",
     "static/css/2.0a9ec390.chunk.css": "https://weeeopen.polito.it/skeeep/static/css/2.0a9ec390.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.79ec5cd3.chunk.js",
     "static/css/main.3ac80498.chunk.css",
-    "static/js/main.ef33c739.chunk.js"
+    "static/js/main.c119502a.chunk.js"
   ]
 }
