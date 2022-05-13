@@ -14,11 +14,22 @@
   color: #3c3d3b;
 }
 
+.card img {
+  height: 200px; /*up until 576px - see below*/
+  max-width: 200px; /*up until 576px - see below*/
+  margin: 8%;
+}
+
 /*https://getbootstrap.com/docs/5.1/layout/breakpoints/#media-queries*/
 /*in the first 2-column view, the cards are smaller*/
 @media (min-width: 576px) {
   .card .title {
     font-size: 14pt;
+  }
+
+  .card img {
+    height: 200px;
+    max-width: 150px;
   }
 }
 
@@ -26,6 +37,11 @@
 @media (min-width: 768px) {
   .card .title {
     font-size: 19pt;
+  }
+
+  .card img {
+    height: 200px;
+    max-width: 200px;
   }
 }
 
