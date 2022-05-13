@@ -50,6 +50,11 @@ const translations = {
         "Discuss exercises, give advice to students, and test your skills with official exam simulations. " +
         "For students and professors.",
     },
+    appuntipolito: {
+      subtitle: "A Telegram group to share course notes for free",
+      description:
+        "Find and download notes posted by other students, or post your notes, diagrams, and useful study material for other students who will be forever grateful to you.",
+    },
   },
   it: {
     footer: {
@@ -103,6 +108,11 @@ const translations = {
       description:
         "Discuti di esercizi, dài consigli agli studenti e metti alla prova le tua abilità con simulazioni" +
         " d'esame ufficiali. Per studenti e professori.",
+    },
+    appuntipolito: {
+      subtitle: "Un gruppo Telegram dove condividere appunti gratuitamente",
+      description:
+        "Trova e scarica gli appunti di altri studenti, o carica i tuoi appunti, schemi, o materiale didattico che possa essere utile ad altri studenti che ti saranno eternamente grati.",
     },
   },
   fa: {
