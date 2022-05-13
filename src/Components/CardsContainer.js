@@ -51,7 +51,7 @@ function CardsContainer(props) {
       name: "appuntipolito",
       title: "Regalo/Cerco Appunti PoliTo",
       url: "https://studyroompoli.altervista.org/notes",
-      addedDate: new Date("2022-03-11"), // TODO: change date
+      addedDate: new Date("2022-05-13"),
     },
   ]);
 
