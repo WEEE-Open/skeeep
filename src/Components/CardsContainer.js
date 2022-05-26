@@ -68,7 +68,8 @@ function CardsContainer(props) {
         sortedCards.push(card); // add at the end
       }
     });
-    setCards(sortedCards);
+    // sort by most recent date and set state
+    setCards(sortedCards.sort((c1, c2) => c2.addedDate - c1.addedDate));
   }, []);
 
   return (
