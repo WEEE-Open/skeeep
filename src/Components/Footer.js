@@ -7,13 +7,21 @@ function Footer(props) {
   return (
     <div className={"footer"}>
       <h5>
-        <a href={"https://github.com/weee-open/skeeep"} target={"_blank"}>
+        <a
+          href={"https://github.com/weee-open/skeeep"}
+          target={"_blank"}
+          rel="noreferrer"
+        >
           <Image id={"skeeep-logo"} src={"skeeep.svg"} alt={"skeeep"} />
         </a>
         {"skeeepDescription" in translations[props.lang].footer
           ? translations[props.lang].footer.skeeepDescription
           : translations.en.footer.skeeepDescription}
-        <a href={"https://weeeopen.polito.it"} target={"_blank"}>
+        <a
+          href={"https://weeeopen.polito.it"}
+          target={"_blank"}
+          rel="noreferrer"
+        >
           <Image
             id={"weee-open-logo"}
             src={"weee-open.svg"}
@@ -25,7 +33,11 @@ function Footer(props) {
         {"contactUsQuestion" in translations[props.lang].footer
           ? translations[props.lang].footer.contactUsQuestion
           : translations.en.footer.contactUsQuestion}{" "}
-        <a href={"https://weeeopen.polito.it/contattaci"} target={"_blank"}>
+        <a
+          href={"https://weeeopen.polito.it/contattaci"}
+          target={"_blank"}
+          rel="noreferrer"
+        >
           {"contactUs" in translations[props.lang].footer
             ? translations[props.lang].footer.contactUs
             : translations.en.footer.contactUs}
@@ -35,7 +47,11 @@ function Footer(props) {
         {"skeeellDiscoverMore" in translations[props.lang].footer
           ? translations[props.lang].footer.skeeellDiscoverMore
           : translations.en.footer.skeeellDiscoverMore}
-        <a href={"https://weeeopen.polito.it/skeeell"} target={"_blank"}>
+        <a
+          href={"https://weeeopen.polito.it/skeeell"}
+          target={"_blank"}
+          rel="noreferrer"
+        >
           <Image id={"skeeell-logo"} src={"skeeell.svg"} alt={"skeeell"} />
         </a>
       </h5>
