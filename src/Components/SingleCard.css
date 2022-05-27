@@ -6,6 +6,14 @@
   height: 95%;
 }
 
+.card .made-by-weee-open-logo {
+  width: 6vw;
+  max-width: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
 .card .title {
   font-size: 19pt; /*up until 576px - see below*/
   letter-spacing: -0.4px;
@@ -14,7 +22,7 @@
   color: #3c3d3b;
 }
 
-.card img {
+.card .card-logo {
   height: 200px; /*up until 576px - see below*/
   max-width: 200px; /*up until 576px - see below*/
   margin: 8%;
@@ -27,7 +35,7 @@
     font-size: 14pt;
   }
 
-  .card img {
+  .card .card-logo {
     height: 200px;
     max-width: 150px;
   }
@@ -39,7 +47,7 @@
     font-size: 19pt;
   }
 
-  .card img {
+  .card .card-logo {
     height: 200px;
     max-width: 200px;
   }

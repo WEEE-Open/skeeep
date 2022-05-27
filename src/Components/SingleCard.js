@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Image } from "react-bootstrap";
 import "./SingleCard.css";
 import translations from "./Translations";
 
@@ -15,7 +15,11 @@ function SingleCard(props) {
         <Card className={addClass}>
           <Card.Body>
             <Card.Title className="title">{props.title}</Card.Title>
-            <img src={imageSrc} alt={`${props.title} Logo`} />
+            <Image
+              src={imageSrc}
+              className={"card-logo"}
+              alt={`${props.title} Logo`}
+            />
             <Card.Title className="subtitle">
               {props.name in translations[props.lang]
                 ? translations[props.lang][props.name].subtitle
@@ -27,6 +31,12 @@ function SingleCard(props) {
                 : translations.en[props.name].description}
             </Card.Text>
           </Card.Body>
+          {props.isMadeByWEEEOpen && (
+            <Image
+              src={`weee-open-W-${props.dark ? "white" : "green"}.png`}
+              className={"made-by-weee-open-logo"}
+            />
+          )}
         </Card>
       </a>
     </>
