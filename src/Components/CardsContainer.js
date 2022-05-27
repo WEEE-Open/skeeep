@@ -10,48 +10,56 @@ function CardsContainer(props) {
       title: "PoliTools",
       url: "https://linktr.ee/politools",
       addedDate: new Date("2022-05-26"),
+      isMadeByWEEEOpen: false,
     },
     {
       name: "inginfbot",
       title: "inginf_bot",
       url: "https://t.me/inginf_bot",
       addedDate: new Date("2022-03-11"),
+      isMadeByWEEEOpen: false,
     },
     {
       name: "studyplanner",
       title: "Study Planner",
       url: "https://github.com/e-caste/study-planner",
       addedDate: new Date("2022-03-11"),
+      isMadeByWEEEOpen: false,
     },
     {
       name: "politogruppibot",
       title: "PoliToGruppiBot",
       url: "https://t.me/politogruppibot",
       addedDate: new Date("2022-03-11"),
+      isMadeByWEEEOpen: false,
     },
     {
       name: "sonousciteledate",
       title: "sonousciteledate.it",
       url: "https://sonousciteledate.it",
       addedDate: new Date("2022-03-11"),
+      isMadeByWEEEOpen: false,
     },
     {
       name: "politomateriale",
       title: "polito-materiale",
       url: "https://github.com/lucaceriani/polito-materiale",
       addedDate: new Date("2022-03-11"),
+      isMadeByWEEEOpen: false,
     },
     {
       name: "skeeelled",
       title: "skeeelled",
       url: "https://github.com/weee-open/skeeelled",
       addedDate: new Date("2022-03-11"),
+      isMadeByWEEEOpen: true,
     },
     {
       name: "appuntipolito",
       title: "Regalo/Cerco Appunti PoliTo",
       url: "https://studyroompoli.altervista.org/notes",
       addedDate: new Date("2022-05-13"),
+      isMadeByWEEEOpen: false,
     },
   ]);
 
@@ -83,6 +91,7 @@ function CardsContainer(props) {
                 title={c.title}
                 url={c.url}
                 isNew={c.isNew}
+                isMadeByWEEEOpen={c.isMadeByWEEEOpen}
                 lang={props.lang}
                 dark={props.dark}
               />
