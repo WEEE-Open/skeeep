@@ -2,9 +2,9 @@ const translations = {
   availableLanguages: ["en", "zh", "it", "fa"],
   en: {
     footer: {
-      firstLine:
+      skeeepDescription:
         "is a curated selection of useful resources for students made by",
-      secondLine: "Find out more about project",
+      skeeellDiscoverMore: "Find out more about project",
     },
     inginfbot: {
       subtitle: "A Telegram bot to find other PoliTo Computer Engineers",
@@ -58,9 +58,9 @@ const translations = {
   },
   it: {
     footer: {
-      firstLine:
+      skeeepDescription:
         "è una curata selezione di risorse utili agli studenti realizzata da",
-      secondLine: "Scopri di più sul progetto",
+      skeeellDiscoverMore: "Scopri di più sul progetto",
     },
     inginfbot: {
       subtitle:
@@ -117,8 +117,9 @@ const translations = {
   },
   fa: {
     footer: {
-      firstLine: "مجموعه ای از منابع مفید برای دانشجویان، ساخته شده توسط ",
-      secondLine: "برای اطلاعات بیشتر کلیک کنید",
+      skeeepDescription:
+        "مجموعه ای از منابع مفید برای دانشجویان، ساخته شده توسط ",
+      skeeellDiscoverMore: "برای اطلاعات بیشتر کلیک کنید",
     },
     inginfbot: {
       subtitle: "ربات تلگرامی برای پیدا کردن مهندسین کامپیوتر پلیتو",
@@ -164,8 +165,8 @@ const translations = {
   },
   zh: {
     footer: {
-      firstLine: "是一个经学生策划的资源选集，制作开发于",
-      secondLine: "了解更多关于",
+      skeeepDescription: "是一个经学生策划的资源选集，制作开发于",
+      skeeellDiscoverMore: "了解更多关于",
     },
     inginfbot: {
       subtitle: "Telegram 机器人，帮你找到其他的电脑工程师",

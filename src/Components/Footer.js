@@ -10,7 +10,7 @@ function Footer(props) {
         <a href={"https://github.com/weee-open/skeeep"}>
           <Image id={"skeeep-logo"} src={"skeeep.svg"} alt={"skeeep"} />
         </a>
-        {translations[props.lang].footer.firstLine}
+        {translations[props.lang].footer.skeeepDescription}
         <a href={"https://weeeopen.polito.it"}>
           <Image
             id={"weee-open-logo"}
@@ -19,8 +19,8 @@ function Footer(props) {
           />
         </a>
       </h5>
-      <h5 className={"second-line"}>
-        {translations[props.lang].footer.secondLine}
+      <h5 className={"skeeell-description"}>
+        {translations[props.lang].footer.skeeellDiscoverMore}
         <a href={"https://weeeopen.polito.it/skeeell"}>
           <Image id={"skeeell-logo"} src={"skeeell.svg"} alt={"skeeell"} />
         </a>
