@@ -21,6 +21,16 @@ function Footer(props) {
           />
         </a>
       </h5>
+      <h5 className={"contact-us"}>
+        {"contactUsQuestion" in translations[props.lang].footer
+          ? translations[props.lang].footer.contactUsQuestion
+          : translations.en.footer.contactUsQuestion}{" "}
+        <a href={"https://weeeopen.polito.it/contattaci"}>
+          {"contactUs" in translations[props.lang].footer
+            ? translations[props.lang].footer.contactUs
+            : translations.en.footer.contactUs}
+        </a>
+      </h5>
       <h5 className={"skeeell-description"}>
         {"skeeellDiscoverMore" in translations[props.lang].footer
           ? translations[props.lang].footer.skeeellDiscoverMore
@@ -29,12 +39,14 @@ function Footer(props) {
           <Image id={"skeeell-logo"} src={"skeeell.svg"} alt={"skeeell"} />
         </a>
       </h5>
-      <hr />
-      <h6>
-        {"thirdPartiesDisclaimer" in translations[props.lang].footer
-          ? translations[props.lang].footer.thirdPartiesDisclaimer
-          : translations.en.footer.thirdPartiesDisclaimer}
-      </h6>
+      <div className={"third-parties-disclaimer"}>
+        <hr />
+        <h6>
+          {"thirdPartiesDisclaimer" in translations[props.lang].footer
+            ? translations[props.lang].footer.thirdPartiesDisclaimer
+            : translations.en.footer.thirdPartiesDisclaimer}
+        </h6>
+      </div>
     </div>
   );
 }

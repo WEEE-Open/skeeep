@@ -5,6 +5,9 @@ const translations = {
       skeeepDescription:
         "is a curated selection of useful resources for students made by",
       skeeellDiscoverMore: "Find out more about project",
+      contactUsQuestion:
+        "Do you want to suggest us a new project to link or report any linked project?",
+      contactUs: "Contact us!",
       thirdPartiesDisclaimer:
         'Disclaimer: all the projects linked here, except for the ones marked with the WEEE Open "W" logo, are made by third parties and are not under team WEEE Open\'s direct control.',
     },
@@ -63,6 +66,9 @@ const translations = {
       skeeepDescription:
         "è una curata selezione di risorse utili agli studenti realizzata da",
       skeeellDiscoverMore: "Scopri di più sul progetto",
+      contactUsQuestion:
+        "Vuoi suggerirci un nuovo progetto da linkare o segnalare un progetto linkato?",
+      contactUs: "Contattaci!",
       thirdPartiesDisclaimer:
         'Disclaimer: tutti i progetti qui linkati, con l\'eccezione di quelli segnati dal logo a "W" di WEEE Open, sono creati da terze parti e non sono sotto il controllo diretto del team WEEE Open.',
     },

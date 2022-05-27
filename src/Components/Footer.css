@@ -6,6 +6,18 @@
   margin-top: -30px;
 }
 
+.footer .contact-us a {
+  color: #00983a;
+}
+
+.footer .contact-us a:hover {
+  color: #02ea5b;
+}
+
+.footer .third-parties-disclaimer {
+  margin-top: -30px;
+}
+
 .footer #skeeep-logo {
   height: 35px;
   vertical-align: -8pt;
