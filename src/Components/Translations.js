@@ -60,6 +60,11 @@ const translations = {
       description:
         "Find and download notes posted by other students, or post your notes, diagrams, and useful study material for other students who will be forever grateful to you.",
     },
+    poliaerospace: {
+      subtitle: "A website for Aerospace Engineering course notes sharing",
+      description:
+        "Find high quality course notes in this student-made website. The focus is on Aerospace Engineering courses, but remember they share the first years courses with most other degrees! If you can, please also help others by uploading your own notes.",
+    },
   },
   it: {
     footer: {
@@ -123,6 +128,11 @@ const translations = {
       subtitle: "Un gruppo Telegram dove condividere appunti gratuitamente",
       description:
         "Trova e scarica gli appunti di altri studenti, o carica i tuoi appunti, schemi, o materiale didattico che possa essere utile ad altri studenti che ti saranno eternamente grati.",
+    },
+    poliaerospace: {
+      subtitle: "Un sito web per appunti di Ingegneria Aerospaziale",
+      description:
+        "In questo sito creato e gestito da studenti trovi appunti di alta qualità per tutti i corsi di Ingegneria Aerospaziale (ma ricorda che gli esami dei primi anni sono gli stessi per tutti i corsi di laurea!). Se puoi, carica anche i tuoi appunti!",
     },
   },
   fa: {
