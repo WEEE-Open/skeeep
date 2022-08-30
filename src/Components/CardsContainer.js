@@ -4,7 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./CardsContainer.css";
 
 function CardsContainer(props) {
-  const [cards, setCards] = useState([
+  const [cards, setCards] = useState([]);
+  const _cards = [
     {
       name: "politools",
       title: "PoliTools",
@@ -61,23 +62,31 @@ function CardsContainer(props) {
       addedDate: new Date("2022-05-13"),
       isMadeByWEEEOpen: false,
     },
-  ]);
+  ];
 
   const gracePeriod = 30; // days that newly added cards will be on top
 
   useEffect(() => {
-    let sortedCards = [];
-    cards.forEach((card) => {
+    let newCards = [];
+    let oldCards = [];
+    _cards.forEach((card) => {
       if (new Date() - card.addedDate < gracePeriod * 24 * 60 * 60 * 1000) {
         card.isNew = true;
-        sortedCards.unshift(card); // add at the beginning
+        newCards.push(card);
       } else {
         card.isNew = false;
-        sortedCards.push(card); // add at the end
+        oldCards.push(card);
       }
     });
-    // sort by most recent date and set state
-    setCards(sortedCards.sort((c1, c2) => c2.addedDate - c1.addedDate));
+    // sort new cards by most recent date
+    newCards.sort((c1, c2) => c2.addedDate - c1.addedDate);
+    // sort old cards by random order
+    for (let i = oldCards.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [oldCards[i], oldCards[j]] = [oldCards[j], oldCards[i]];
+    }
+    // set the cards state as the concatenation of new cards with old cards
+    setCards(newCards.concat(oldCards));
   }, []);
 
   return (
