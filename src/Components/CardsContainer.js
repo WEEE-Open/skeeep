@@ -62,6 +62,13 @@ function CardsContainer(props) {
       addedDate: new Date("2022-05-13"),
       isMadeByWEEEOpen: false,
     },
+    {
+      name: "poliaerospace",
+      title: "PoliAerospace",
+      url: "https://www.poliaerospace.org",
+      addedDate: new Date("2022-09-02"),
+      isMadeByWEEEOpen: false,
+    },
   ];
 
   const gracePeriod = 30; // days that newly added cards will be on top
