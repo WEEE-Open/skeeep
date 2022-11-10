@@ -69,6 +69,13 @@ function CardsContainer(props) {
       addedDate: new Date("2022-09-02"),
       isMadeByWEEEOpen: false,
     },
+    {
+      name: "associazionidelpolitecnico",
+      title: "Associazioni del Politecnico",
+      url: "https://znap.link/associazionidelpolitecnico",
+      addedDate: new Date("2022-11-11"),
+      isMadeByWEEEOpen: false,
+    },
   ];
 
   const gracePeriod = 30; // days that newly added cards will be on top

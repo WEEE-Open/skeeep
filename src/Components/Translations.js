@@ -21,7 +21,7 @@ const translations = {
       subtitle:
         "A Python CLI to download study material from PoliTo's teaching portal",
       description:
-        "For the nerds among us, a cross-platform command line utility to download all your courses' slides from the teaching portal in a few quick steps at the terminal",
+        "For the nerds among us, a cross-platform command line utility to download all your courses' slides from the teaching portal in a few quick steps at the terminal.",
     },
     politools: {
       subtitle: "A browser extension for PoliTo's portal page",
@@ -65,6 +65,11 @@ const translations = {
       description:
         "Find high quality course notes in this student-made website. The focus is on Aerospace Engineering courses, but remember they share the first years courses with most other degrees! If you can, please also help others by uploading your own notes.",
     },
+    associazionidelpolitecnico: {
+      subtitle: "A website for associations of PoliTo",
+      description:
+        "Find each student association at PoliTo in a simple website. Officially maintained.",
+    },
   },
   it: {
     footer: {
@@ -88,7 +93,7 @@ const translations = {
       subtitle:
         "Una CLI in Python per scaricare il materiale dal portale per la didattica del PoliTo",
       description:
-        "Per i nerd tra noi, una utility da riga di comando cross-platform per scaricare tutte le slide dei propri corsi in pochi step al terminale",
+        "Per i nerd tra noi, una utility da riga di comando cross-platform per scaricare tutte le slide dei propri corsi in pochi step al terminale.",
     },
     politools: {
       subtitle:
@@ -133,6 +138,11 @@ const translations = {
       subtitle: "Un sito web per appunti di Ingegneria Aerospaziale",
       description:
         "In questo sito creato e gestito da studenti trovi appunti di alta qualità per tutti i corsi di Ingegneria Aerospaziale (ma ricorda che gli esami dei primi anni sono gli stessi per tutti i corsi di laurea!). Se puoi, carica anche i tuoi appunti!",
+    },
+    associazionidelpolitecnico: {
+      subtitle: "Un sito web per le associazioni del Politecnico",
+      description:
+        "Trova in un comodo elenco i collegamenti a tutte le associazioni del Politecnico. Mantenuto in maniera ufficiale.",
     },
   },
   fa: {
