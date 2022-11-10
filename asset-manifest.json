@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://weee-open.github.io/skeeep/static/css/main.20285e43.chunk.css",
-    "main.js": "https://weee-open.github.io/skeeep/static/js/main.cdbcafb4.chunk.js",
-    "main.js.map": "https://weee-open.github.io/skeeep/static/js/main.cdbcafb4.chunk.js.map",
+    "main.js": "https://weee-open.github.io/skeeep/static/js/main.4d1e502d.chunk.js",
+    "main.js.map": "https://weee-open.github.io/skeeep/static/js/main.4d1e502d.chunk.js.map",
     "runtime-main.js": "https://weee-open.github.io/skeeep/static/js/runtime-main.887777f8.js",
     "runtime-main.js.map": "https://weee-open.github.io/skeeep/static/js/runtime-main.887777f8.js.map",
     "static/css/2.0a9ec390.chunk.css": "https://weee-open.github.io/skeeep/static/css/2.0a9ec390.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.89ead7da.chunk.js",
     "static/css/main.20285e43.chunk.css",
-    "static/js/main.cdbcafb4.chunk.js"
+    "static/js/main.4d1e502d.chunk.js"
   ]
 }
