@@ -65,7 +65,7 @@ function CardsContainer(props) {
     {
       name: "poliaerospace",
       title: "PoliAerospace",
-      url: "https://www.poliaerospace.org",
+      url: "https://poliaerospace.altervista.org",
       addedDate: new Date("2022-09-02"),
       isMadeByWEEEOpen: false,
     },
